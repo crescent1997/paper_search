@@ -6,6 +6,17 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## 更新履歴
 
+### 2026-09-09
+
+- **[Feedback-Guided Extraction of Knowledge Base from Retrieval-Augmented LLM Applications](Attack/2024-2411.14110-feedback-guided-extraction-copybreakrag.md)** — Google Scholar cited: **未確認**  
+  初期版RAG-Thiefを発展させたCopyBreakRAG。抽出済みchunkをfeedback memoryとして利用し、exploration / exploitationを切り替えながらblack-box RAGのknowledge baseを大規模に復元する。
+
+- **[Differentially Private Synthetic Text Generation for Retrieval-Augmented Generation (RAG)](Defense/2025-2510.06719-dp-synrag.md)** — Google Scholar cited: **未確認**  
+  private corpusをone-timeのDP synthetic corpusへ変換し、その後のqueryでは追加privacy budgetを消費せず通常のRAGとして利用するdata-layer defenseを提案する。
+
+- ★ **[PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models](Attack/2024-2402.07867-poisonedrag.md)** — Google Scholar cited: **193**  
+  knowledge baseへ少数のmalicious textsを注入し、target queryに対してattacker-chosen answerを生成させるknowledge corruption attack。大規模databaseでも高いASRを示す。
+
 ### 2026-09-08
 
 - ★ **[The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)](Attack/2024-2402.16893-the-good-and-the-bad.md)** — Google Scholar cited: **336**  
@@ -22,4 +33,4 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## Citation policy
 
-被引用数は **Google Scholar** をsourceとし、各Markdownの `last_checked` 時点の値を記録する。Google Scholar cited >= 50 の論文には ★ を付与する。
+被引用数は **Google Scholar** をsourceとし、各Markdownの `last_checked` 時点の値を記録する。Google Scholar cited >= 50 の論文には ★ を付与する。Google Scholarの値を信頼できる形で取得できなかった場合は、推測値を入れず **未確認** と明記し、次回確認時に更新する。
