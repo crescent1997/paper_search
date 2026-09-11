@@ -6,6 +6,17 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## 更新履歴
 
+### 2026-09-11
+
+- **[Fine-Grained Privacy Extraction from Retrieval-Augmented Generation Systems via Knowledge Asymmetry Exploitation](Attack/2025-2507.23229-fine-grained-privacy-extraction.md)** — cited: **未確認**（citation source: **未確認**）  
+  target RAGとstandard LLMのknowledge asymmetryを利用し、混在したRAG responseからprivate knowledge-base由来sentenceをfine-grainedに特定するblack-box privacy extraction attack。ICLR 2026。
+
+- **[Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation](Attack/2025-2502.08806-riddle-me-this.md)** — cited: **33**（citation source: **ResearchGate**）  
+  target documentから自然なinterrogation queryを生成し、複数回答の正答性を集約してprivate RAG databaseへのdocument membershipを高精度かつstealthyに推定する。ACM CCS 2025。
+
+- **[RAGFort: Dual-Path Defense Against Proprietary Knowledge Base Extraction in Retrieval-Augmented Generation](Defense/2025-2511.09671-ragfort.md)** — cited: **1**（citation source: **ResearchGate**）  
+  knowledge-base extractionをinter-class explorationとintra-class exploitationに分解し、contrastive reindexingとconstrained cascade generationで両経路を抑えるdual-path defense。AAAI 2026。
+
 ### 2026-09-10
 
 - **[Benchmarking Knowledge-Extraction Attack and Defense on Retrieval-Augmented Generation](Benchmark/2026-2602.09319-benchmarking-knowledge-extraction-attack-and-defense.md)** — Google Scholar cited: **未確認**  
@@ -44,4 +55,4 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## Citation policy
 
-被引用数は **Google Scholar** をsourceとし、各Markdownの `last_checked` 時点の値を記録する。Google Scholar cited >= 50 の論文には ★ を付与する。Google Scholarの値を信頼できる形で取得できなかった場合は、推測値を入れず **未確認** と明記し、次回確認時に更新する。
+被引用数は **Google Scholarを第一候補** とし、取得できない場合はSemantic Scholar、OpenAlex、OpenCitations、Crossref、ResearchGate等の確認可能なsourceを利用する。各Markdownでは `cited` と実際に参照した `citation_source` をセットで記録し、READMEでも被引用数とsourceを併記する。source不明のGoogle検索snippetはGoogle Scholar値として扱わない。信頼できる被引用数を確認できない場合は推測せず **未確認** とする。sourceを問わず cited >= 50 の論文には ★ を付与する。
