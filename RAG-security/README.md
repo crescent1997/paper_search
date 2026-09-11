@@ -6,15 +6,20 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## 更新履歴
 
+### 2026-09-12
+
+- **[Exposing Privacy Risks in Graph Retrieval-Augmented Generation](Attack/2025-2508.17222-exposing-privacy-risks-graphrag.md)** — cited: **2**（citation source: **ResearchGate**）  
+  GraphRAGに対するblack-box extractionを体系評価し、raw source textの漏洩を抑えられる場合がある一方、entity / relationship / descriptionなど内部Knowledge Graphのstructured knowledgeが高率に漏洩するprivacy trade-offを示す。Findings of ACL 2026。
+
 ### 2026-09-11
 
 - **[Fine-Grained Privacy Extraction from Retrieval-Augmented Generation Systems via Knowledge Asymmetry Exploitation](Attack/2025-2507.23229-fine-grained-privacy-extraction.md)** — cited: **未確認**（citation source: **未確認**）  
   target RAGとstandard LLMのknowledge asymmetryを利用し、混在したRAG responseからprivate knowledge-base由来sentenceをfine-grainedに特定するblack-box privacy extraction attack。ICLR 2026。
 
-- **[Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation](Attack/2025-2502.08806-riddle-me-this.md)** — cited: **33**（citation source: **ResearchGate**）  
+- **[Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation](Attack/2025-2502.00306-riddle-me-this.md)** — cited: **33**（citation source: **ResearchGate**）  
   target documentから自然なinterrogation queryを生成し、複数回答の正答性を集約してprivate RAG databaseへのdocument membershipを高精度かつstealthyに推定する。ACM CCS 2025。
 
-- **[RAGFort: Dual-Path Defense Against Proprietary Knowledge Base Extraction in Retrieval-Augmented Generation](Defense/2025-2511.09671-ragfort.md)** — cited: **1**（citation source: **ResearchGate**）  
+- **[RAGFort: Dual-Path Defense Against Proprietary Knowledge Base Extraction in Retrieval-Augmented Generation](Defense/2025-2511.10128-ragfort.md)** — cited: **1**（citation source: **ResearchGate**）  
   knowledge-base extractionをinter-class explorationとintra-class exploitationに分解し、contrastive reindexingとconstrained cascade generationで両経路を抑えるdual-path defense。AAAI 2026。
 
 ### 2026-09-10
@@ -55,4 +60,6 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## Citation policy
 
-被引用数は **Google Scholarを第一候補** とし、取得できない場合はSemantic Scholar、OpenAlex、OpenCitations、Crossref、ResearchGate等の確認可能なsourceを利用する。各Markdownでは `cited` と実際に参照した `citation_source` をセットで記録し、READMEでも被引用数とsourceを併記する。source不明のGoogle検索snippetはGoogle Scholar値として扱わない。信頼できる被引用数を確認できない場合は推測せず **未確認** とする。sourceを問わず cited >= 50 の論文には ★ を付与する。
+被引用数は **Google Scholarを第一候補** とし、取得できない場合はSemantic Scholar、OpenAlex、OpenCitations、Crossref、ResearchGate等の確認可能なsourceを利用する。各Markdownでは `cited` と実際に参照した `citation_source` をセットで記録し、READMEでも被引用数とsourceを併記する。source不明のGoogle検索snippetをGoogle Scholar値として扱わない。信頼できる被引用数を確認できない場合は推測せず **未確認** とする。sourceを問わず cited >= 50 の論文には ★ を付与する。
+
+自動選定では、公開から2年以内は主要国際学会採択論文をcitation数が少なくても対象とし、それ以外は1年以内 cited >= 1、1〜2年 cited >= 10を基準とする。公開から2年以上は **cited >= 20 または採択venueのh5-index >= 100** を基準とする。ACL系では2年以上前かつcited < 20の場合、NAACLは対象に残す一方、EACLやIJCNLPはvenueのみでは対象に残さない。ユーザー指定論文はこれらの足切りを適用しない。
