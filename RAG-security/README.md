@@ -6,6 +6,11 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## 更新履歴
 
+### 2026-09-13
+
+- **[Detecting RAG Extraction Attack via Dual-Path Runtime Integrity Game](Defense/2026-2604.10717-canaryrag.md)** — cited: **0**（citation source: **ResearchGate**）  
+  retrieved chunksへcanary tokensを埋め込み、Target / Oracleのdual-pathで相反するintegrity条件を監視することで、adaptiveなknowledge-base extractionをruntimeで検知・停止するCanaryRAG。ACL 2026 Main Conference。
+
 ### 2026-09-12
 
 - **[Exposing Privacy Risks in Graph Retrieval-Augmented Generation](Attack/2025-2508.17222-exposing-privacy-risks-graphrag.md)** — cited: **2**（citation source: **ResearchGate**）  
