@@ -6,6 +6,17 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## 更新履歴
 
+### 2026-09-15
+
+- **[Unleashing Worms and Extracting Data: Escalating the Outcome of Attacks against RAG-based Inference in Scale and Severity Using Jailbreaking](Attack/2024-2409.08045-unleashing-worms-extracting-data.md)** — cited: **2**（citation source: **SciSpace**）  
+  jailbreakでretrieved documentsを露出させつつ、embedding-spaceをadaptiveに探索してRAG databaseを高率に抽出するDGEAを提案。さらにself-replicating promptによるRAG wormで攻撃を複数applicationへ伝播させる。
+
+- **[Privacy-Preserving Retrieval-Augmented Generation with Differential Privacy](Defense/2024-2412.04697-privacy-preserving-rag-differential-privacy.md)** — cited: **16**（citation source: **Papersgraph**）  
+  retrieved documentsをdisjoint groupsへ分割したLLM votingにDifferential Privacyを適用し、DPSparseVoteRAGではprivate knowledgeが不要なtokenのprivacy-budget消費を回避してdocument-level privacyと生成utilityを両立する。
+
+- **[SD-RAG: A Prompt-Injection-Resilient Framework for Selective Disclosure in Retrieval-Augmented Generation](Defense/2026-2601.11199-sd-rag.md)** — cited: **3**（citation source: **OUCI**）  
+  user queryから隔離したredaction stageでretrieved private contextを先にsanitizeし、natural-language privacy constraintsに基づくselective disclosureによってprompt injection成功時のsensitive-context leakageを抑える。
+
 ### 2026-09-14
 
 - **[Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data](Defense/2024-2406.14773-sage.md)** — cited: **7**（citation source: **Lune**）  
