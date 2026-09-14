@@ -6,6 +6,14 @@ LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要
 
 ## 更新履歴
 
+### 2026-09-14
+
+- **[Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data](Defense/2024-2406.14773-sage.md)** — cited: **7**（citation source: **Lune**）  
+  private corpusをattribute-based generationとagent-based iterative privacy refinementでsynthetic corpusへ置換し、RAG utilityを維持しながらtargeted / untargeted data extraction leakageを大幅に抑えるSAGE。EMNLP 2025 Main。
+
+- **[Pisces: Cryptography-based Private Retrieval-Augmented Generation with Dual-Path Retrieval](Defense/2026-pisces-private-rag.md)** — cited: **未確認**（citation source: **未確認**）  
+  semantic retrievalとlexical retrievalの双方をMPC / PIR / FHE / PSI等でprivateに実行し、user queryとserver-side knowledge baseを秘匿したままhybrid RAG retrievalを行うcryptographic framework。ICLR 2026。
+
 ### 2026-09-13
 
 - **[Detecting RAG Extraction Attack via Dual-Path Runtime Integrity Game](Defense/2026-2604.10717-canaryrag.md)** — cited: **0**（citation source: **ResearchGate**）  
