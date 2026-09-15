@@ -1,89 +1,19 @@
 # RAG Security Paper Notes
 
-LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要約の更新履歴。
+LLM / Retrieval-Augmented Generation (RAG) のsecurity riskに関する論文要約。
 
 特に、private retrieval database、knowledge base、corpus、retrieved documentsのdata extraction / stealing / exfiltrationを重点的に収集する。
 
-## 更新履歴
+## Categories
 
-### 2026-09-15
+- **[Attack](Attack/README.md)** — knowledge-base / corpus extraction、membership inference、prompt injection、poisoning等のattack論文
+- **[Defense](Defense/README.md)** — extraction防御、privacy-preserving RAG、runtime detection、selective disclosure等のdefense論文
+- **[Benchmark](Benchmark/README.md)** — RAG security / privacyのbenchmark・survey論文
 
-- **[Unleashing Worms and Extracting Data: Escalating the Outcome of Attacks against RAG-based Inference in Scale and Severity Using Jailbreaking](Attack/2024-2409.08045-unleashing-worms-extracting-data.md)** — cited: **2**（citation source: **SciSpace**）  
-  jailbreakでretrieved documentsを露出させつつ、embedding-spaceをadaptiveに探索してRAG databaseを高率に抽出するDGEAを提案。さらにself-replicating promptによるRAG wormで攻撃を複数applicationへ伝播させる。
-
-- **[Privacy-Preserving Retrieval-Augmented Generation with Differential Privacy](Defense/2024-2412.04697-privacy-preserving-rag-differential-privacy.md)** — cited: **16**（citation source: **Papersgraph**）  
-  retrieved documentsをdisjoint groupsへ分割したLLM votingにDifferential Privacyを適用し、DPSparseVoteRAGではprivate knowledgeが不要なtokenのprivacy-budget消費を回避してdocument-level privacyと生成utilityを両立する。
-
-- **[SD-RAG: A Prompt-Injection-Resilient Framework for Selective Disclosure in Retrieval-Augmented Generation](Defense/2026-2601.11199-sd-rag.md)** — cited: **3**（citation source: **OUCI**）  
-  user queryから隔離したredaction stageでretrieved private contextを先にsanitizeし、natural-language privacy constraintsに基づくselective disclosureによってprompt injection成功時のsensitive-context leakageを抑える。
-
-### 2026-09-14
-
-- **[Mitigating the Privacy Issues in Retrieval-Augmented Generation (RAG) via Pure Synthetic Data](Defense/2024-2406.14773-sage.md)** — cited: **7**（citation source: **Lune**）  
-  private corpusをattribute-based generationとagent-based iterative privacy refinementでsynthetic corpusへ置換し、RAG utilityを維持しながらtargeted / untargeted data extraction leakageを大幅に抑えるSAGE。EMNLP 2025 Main。
-
-- **[Pisces: Cryptography-based Private Retrieval-Augmented Generation with Dual-Path Retrieval](Defense/2026-pisces-private-rag.md)** — cited: **未確認**（citation source: **未確認**）  
-  semantic retrievalとlexical retrievalの双方をMPC / PIR / FHE / PSI等でprivateに実行し、user queryとserver-side knowledge baseを秘匿したままhybrid RAG retrievalを行うcryptographic framework。ICLR 2026。
-
-### 2026-09-13
-
-- **[Detecting RAG Extraction Attack via Dual-Path Runtime Integrity Game](Defense/2026-2604.10717-canaryrag.md)** — cited: **0**（citation source: **ResearchGate**）  
-  retrieved chunksへcanary tokensを埋め込み、Target / Oracleのdual-pathで相反するintegrity条件を監視することで、adaptiveなknowledge-base extractionをruntimeで検知・停止するCanaryRAG。ACL 2026 Main Conference。
-
-### 2026-09-12
-
-- **[Exposing Privacy Risks in Graph Retrieval-Augmented Generation](Attack/2025-2508.17222-exposing-privacy-risks-graphrag.md)** — cited: **2**（citation source: **ResearchGate**）  
-  GraphRAGに対するblack-box extractionを体系評価し、raw source textの漏洩を抑えられる場合がある一方、entity / relationship / descriptionなど内部Knowledge Graphのstructured knowledgeが高率に漏洩するprivacy trade-offを示す。Findings of ACL 2026。
-
-### 2026-09-11
-
-- **[Fine-Grained Privacy Extraction from Retrieval-Augmented Generation Systems via Knowledge Asymmetry Exploitation](Attack/2025-2507.23229-fine-grained-privacy-extraction.md)** — cited: **未確認**（citation source: **未確認**）  
-  target RAGとstandard LLMのknowledge asymmetryを利用し、混在したRAG responseからprivate knowledge-base由来sentenceをfine-grainedに特定するblack-box privacy extraction attack。ICLR 2026。
-
-- **[Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation](Attack/2025-2502.00306-riddle-me-this.md)** — cited: **33**（citation source: **ResearchGate**）  
-  target documentから自然なinterrogation queryを生成し、複数回答の正答性を集約してprivate RAG databaseへのdocument membershipを高精度かつstealthyに推定する。ACM CCS 2025。
-
-- **[RAGFort: Dual-Path Defense Against Proprietary Knowledge Base Extraction in Retrieval-Augmented Generation](Defense/2025-2511.10128-ragfort.md)** — cited: **1**（citation source: **ResearchGate**）  
-  knowledge-base extractionをinter-class explorationとintra-class exploitationに分解し、contrastive reindexingとconstrained cascade generationで両経路を抑えるdual-path defense。AAAI 2026。
-
-### 2026-09-10
-
-- **[Benchmarking Knowledge-Extraction Attack and Defense on Retrieval-Augmented Generation](Benchmark/2026-2602.09319-benchmarking-knowledge-extraction-attack-and-defense.md)** — Google Scholar cited: **未確認**  
-  RAG knowledge-base extraction attack / defenseを複数retriever・generator・indexing方式・dataset・metricで統一比較し、retrievalとgenerationのどこで漏洩するかを分離評価するsystematic benchmark。
-
-- **[SafeRAG: Benchmarking Security in Retrieval-Augmented Generation of Large Language Model](Benchmark/2025-2501.18636-saferag.md)** — Google Scholar cited: **未確認**  
-  Silver Noise、Inter-context Conflict、Soft Ad、White DoSの4種のattack scenarioを用い、retriever・filter・generatorを横断してRAG security robustnessを評価するACL 2025 benchmark。
-
-- **[Silent Leaks: Implicit Knowledge Extraction Attack on RAG Systems through Benign Queries](Attack/2025-2505.15420-silent-leaks-ikea.md)** — Google Scholar cited: **未確認**  
-  prompt injectionやjailbreakを使わず、benign-looking queriesをadaptiveに生成してRAG内部knowledgeを抽出するIKEAを提案。input/output filteringを回避しやすく、substitute RAG構築まで評価する。
-
-### 2026-09-09
-
-- **[Feedback-Guided Extraction of Knowledge Base from Retrieval-Augmented LLM Applications](Attack/2024-2411.14110-feedback-guided-extraction-copybreakrag.md)** — Google Scholar cited: **未確認**  
-  初期版RAG-Thiefを発展させたCopyBreakRAG。抽出済みchunkをfeedback memoryとして利用し、exploration / exploitationを切り替えながらblack-box RAGのknowledge baseを大規模に復元する。
-
-- **[Differentially Private Synthetic Text Generation for Retrieval-Augmented Generation (RAG)](Defense/2025-2510.06719-dp-synrag.md)** — Google Scholar cited: **未確認**  
-  private corpusをone-timeのDP synthetic corpusへ変換し、その後のqueryでは追加privacy budgetを消費せず通常のRAGとして利用するdata-layer defenseを提案する。
-
-- ★ **[PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models](Attack/2024-2402.07867-poisonedrag.md)** — Google Scholar cited: **193**  
-  knowledge baseへ少数のmalicious textsを注入し、target queryに対してattacker-chosen answerを生成させるknowledge corruption attack。大規模databaseでも高いASRを示す。
-
-### 2026-09-08
-
-- ★ **[The Good and The Bad: Exploring Privacy Issues in Retrieval-Augmented Generation (RAG)](Attack/2024-2402.16893-the-good-and-the-bad.md)** — Google Scholar cited: **336**  
-  RAGがprivate retrieval databaseという新しいprivacy attack surfaceを作る一方、LLM本体のtraining-data leakageを緩和する可能性もあることを、HealthCareMagic / Enron Email等を用いたtargeted・untargeted extractionで体系的に評価する。
-
-- ★ **[Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems](Attack/2024-2402.17840-follow-my-instruction-and-spill-the-beans.md)** — Google Scholar cited: **111**  
-  instruction-following能力を悪用してretrieved contextをほぼverbatimに再出力させるblack-box extraction attackを示し、customized GPTやmultiple-query corpus reconstructionまで評価する。
-
-- **[Data Extraction Attacks in Retrieval-Augmented Generation via Backdoors](Attack/2024-2411.01705-data-extraction-attacks-via-backdoors.md)** — Google Scholar cited: **37**  
-  fine-tuning dataへ少量のpoisonを混入してgeneratorへbackdoorを埋め込み、trigger時にretrieved private documentをverbatim / paraphraseして漏洩させるsupply-chain型attackを提案する。
-
-- **[Connect the Dots: Knowledge Graph-Guided Crawler Attack on Retrieval-Augmented Generation Systems](Attack/2026-2601.15678-connect-the-dots.md)** — Google Scholar cited: **2**  
-  black-box RAGのresponseからKnowledge Graphを構築し、未探索領域をglobal planningで選択するRAGCrawlerにより、限られたquery budgetでprivate knowledge baseを効率的にstealする。
+各categoryの論文一覧・更新履歴は、それぞれのdirectory直下の `README.md` で管理する。
 
 ## Citation policy
 
-被引用数は **Google Scholarを第一候補** とし、取得できない場合はSemantic Scholar、OpenAlex、OpenCitations、Crossref、ResearchGate等の確認可能なsourceを利用する。各Markdownでは `cited` と実際に参照した `citation_source` をセットで記録し、READMEでも被引用数とsourceを併記する。source不明のGoogle検索snippetをGoogle Scholar値として扱わない。信頼できる被引用数を確認できない場合は推測せず **未確認** とする。sourceを問わず cited >= 50 の論文には ★ を付与する。
+被引用数は **Google Scholarを第一候補** とし、取得できない場合はSemantic Scholar、OpenAlex、OpenCitations、Crossref、ResearchGate等の確認可能なsourceを利用する。各Markdownでは `cited` と実際に参照した `citation_source` をセットで記録し、category READMEでも被引用数とsourceを併記する。source不明のGoogle検索snippetをGoogle Scholar値として扱わない。信頼できる被引用数を確認できない場合は推測せず **未確認** とする。sourceを問わず cited >= 50 の論文には ★ を付与する。
 
-自動選定では、公開から2年以内は主要国際学会採択論文をcitation数が少なくても対象とし、それ以外は1年以内 cited >= 1、1〜2年 cited >= 10を基準とする。公開から2年以上は **cited >= 20 または採択venueのh5-index >= 100** を基準とする。ACL系では2年以上前かつcited < 20の場合、NAACLは対象に残す一方、EACLやIJCNLPはvenueのみでは対象に残さない。ユーザー指定論文はこれらの足切りを適用しない。
+自動選定では、公開から2年以上は cited >= 20、1〜2年は cited >= 10、1年以内は cited >= 1 を基準とする。どのcitation sourceからも信頼できる値を取得できない場合は、ACL / EMNLP / NAACL / EACL / AACL（Findings含む）、USENIX Security、IEEE S&P、ACM CCS、NDSS、ICLR、NeurIPS、ICML、AAAI等の主要国際会議への採択を公式情報で確認できればvenue fallbackとして候補に残す。ユーザー指定論文にはcitation条件を適用しない。
