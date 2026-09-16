@@ -4,6 +4,11 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-09-16
+
+- **[E-MIA: Exam-Style Black-Box Membership Inference Attacks against RAG Systems](2026-2605.00955-e-mia.md)** — cited: **1**（citation source: **arXiv.gg**）  
+  candidate documentからhard evidenceを抽出して4種類のexam questionsへ変換し、複数問題の正答をaggregateするblack-box membership inference。semantic-similarity型MIAよりmember/non-memberを分離しやすく、低FPR領域とprompt guardrail下でも高いattack performanceを示す。
+
 ### 2026-09-15
 
 - **[Unleashing Worms and Extracting Data: Escalating the Outcome of Attacks against RAG-based Inference in Scale and Severity Using Jailbreaking](2024-2409.08045-unleashing-worms-extracting-data.md)** — cited: **2**（citation source: **SciSpace**）  
