@@ -1,8 +1,19 @@
 # LLM Model Security — Defense
 
-Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身に学習・内部化させ、低権限instructionによるprompt injection、jailbreak、system prompt extraction等を防ぐdefense論文の要約と更新履歴。
+Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身に学習・内部化させ、低権限instructionによるprompt injection、jailbreak、system prompt extraction等を防ぐdefense論文の要約と更新履歴。model-level手法との比較上重要なsystem-level privilege separationも、その旨を明記して収録する。
 
 ## 更新履歴
+
+### 2026-09-17
+
+- **[StruQ: Defending Against Prompt Injection with Structured Queries](2024-2402.06363-struq.md)** — cited: **未確認**  
+  trusted promptとuntrusted dataをstructured queryとして分離し、secure front-endとstructured instruction tuningでdata側のinstructionを無視させる。後続Instruction Hierarchyにつながる2-level privilege separationの代表的手法。
+
+- **[SecAlign: Defending Against Prompt Injection with Preference Optimization](2025-2503.18813-secalign.md)** — cited: **未確認**  
+  StruQ型SFTのpositive-only objectiveを拡張し、secure / insecure response pairをDPOで直接比較する。optimization-based prompt injectionへのrobustnessを大きく改善する。
+
+- **[Defeating Prompt Injections by Design](2024-2410.05451-defeating-prompt-injections-by-design-camel.md)** — cited: **未確認**  
+  CaMeLによるsystem-level defense。Privileged / Quarantined LLMとcapability・provenance trackingを用い、LLMがprompt injectionされてもuntrusted computationへ高権限を渡さない。model-level hierarchyとの比較対象として収録。
 
 ### 2026-09-16
 
