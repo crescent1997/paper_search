@@ -4,6 +4,11 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-09-17
+
+- **[PRAG: End-to-End Privacy-Preserving Retrieval-Augmented Generation](2026-2604.26525-prag.md)** — cited: **2**（citation source: **alphaXiv**）  
+  CKKS homomorphic encryption上でdocument/query embeddingsとANN retrievalを秘匿し、encrypted K-means + HNSWでcloud-side semantic retrievalを高速化する。さらにOEEでranking errorを制御し、dummy traversalとperiodic rebuildでHNSW access-pattern leakageも抑える。
+
 ### 2026-09-15
 
 - **[Privacy-Preserving Retrieval-Augmented Generation with Differential Privacy](2024-2412.04697-privacy-preserving-rag-differential-privacy.md)** — cited: **16**（citation source: **Papersgraph**）  
