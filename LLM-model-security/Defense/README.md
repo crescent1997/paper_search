@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-09-16
+
+- **[Instructional Segment Embedding: Improving LLM Safety with Instruction Hierarchy](2024-2410.09102-instructional-segment-embedding.md)** — cited: **23**（citation source: **alphaXiv**）  
+  system / user / untrusted data等のinstruction sourceをlearnable segment embeddingとして各tokenへ付与し、priorityをarchitecture-level signalとして明示する。Instruction Hierarchyのbehavioral trainingを補完し、prompt injection / extractionへのrobustnessと通常のinstruction followingを同時に改善する。
+
 ### 2026-09-15
 
 - ★ **[The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](2024-2404.13208-instruction-hierarchy.md)** — cited: **158**（citation source: **Pith**）  
