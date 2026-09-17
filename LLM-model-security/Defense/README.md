@@ -4,6 +4,14 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-09-18
+
+- ★ **[Meta SecAlign: A Secure Foundation LLM Against Prompt Injection Attacks](2025-2507.02735-meta-secalign.md)** — cited: **62**（citation source: **Semantic Scholar**）  
+  SecAlignをSecAlign++へ拡張し、dedicated input role、delimiter filtering、preference optimization、injection position randomization等を組み合わせてopen-weight foundation LLMへprompt/data privilege separationを組み込む。static agent benchmarkでは低ASRを達成する一方、white-box GCGやadaptive attackには残存脆弱性がある。
+
+- **[Reasoning Up the Instruction Ladder for Controllable Language Models](2025-2511.04694-reasoning-up-instruction-ladder.md)** — cited: **未確認**（venue fallback: **Findings of ACL 2026**）  
+  instruction hierarchy resolutionをexplicit reasoning taskとして扱い、VerIHとRLVR / GRPOでsystem-user conflictを学習する。IHEval Conflictを大幅に改善し、security-specific trainingなしでもjailbreak / prompt-injection robustnessへgeneralizeする。
+
 ### 2026-09-17
 
 - **[StruQ: Defending Against Prompt Injection with Structured Queries](2024-2402.06363-struq.md)** — cited: **未確認**  
