@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-09-21
+
+- **[ProxyPrompt: Securing System Prompts against Prompt Extraction Attacks](2025-2505.11459-proxyprompt.md)** — cited: **未確認**（venue fallback: **Findings of ACL 2026**）  
+  original system promptをtask utilityを維持するproxyへ置換し、prompt extractionが成功してもoriginal assetのrecoveryへ直結しないようにするconfidentiality-oriented Defense。264 LLM×prompt pairsで94.70%のprotectionを報告する。
+
 ### 2026-09-20
 
 - **[IH-Challenge: A Training Dataset to Improve Instruction Hierarchy on Frontier LLMs](2026-2603.10521-ih-challenge.md)** — cited: **15**（citation source: **Semantic Scholar**）  
