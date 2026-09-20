@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-09-20
+
+- **[IH-Challenge: A Training Dataset to Improve Instruction Hierarchy on Frontier LLMs](2026-2603.10521-ih-challenge.md)** — cited: **15**（citation source: **Semantic Scholar**）  
+  system / developer / user / toolのtrust orderingを、shortcut-resistantかつprogrammatically gradeableなRL environmentとして学習。online adversarial example generationを組み合わせ、16評価平均84.1%→94.1%、unsafe behavior 6.6%→0.7%を報告する。
+
 ### 2026-09-18
 
 - ★ **[Meta SecAlign: A Secure Foundation LLM Against Prompt Injection Attacks](2025-2507.02735-meta-secalign.md)** — cited: **62**（citation source: **Semantic Scholar**）  
