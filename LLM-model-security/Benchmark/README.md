@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationの遵守能�
 
 ## 更新履歴
 
+### 2026-09-20
+
+- **[Control Illusion: The Failure of Instruction Hierarchies in Large Language Models](2025-2502.15851-control-illusion.md)** — cited: **未確認**（venue fallback: **AAAI 2026 Main Technical Track**）  
+  system/user roleをswapした相互排他的constraint pairでpriority followingをcontrolledに評価。role designationよりconstraint固有biasやauthority / expertise / consensus等のsocial hierarchy cueが強く作用する場合を示す。
+
 ### 2026-09-16
 
 - **[IHEval: Evaluating Language Models on Following the Instruction Hierarchy](2025-2502.08745-iheval.md)** — cited: **19**（citation source: **Hugging Face paper metadata**）  
