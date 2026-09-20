@@ -1,0 +1,13 @@
+# KV Cache — model
+
+attention / decoder architectureそのものを変更し、KV head数、cached representationの次元、cacheを保持するlayer数・回数を構造的に減らす論文の要約と更新履歴。
+
+## 更新履歴
+
+### 2026-09-20
+
+- **[You Only Cache Once: Decoder-Decoder Architectures for Language Models](2024-2405.05254-yoco.md)** — cited: **未確認**（citation source: **未確認**; venue fallback: NeurIPS 2024）  
+  self-decoderが一度だけglobal KV cacheを作り、後段cross-decoderの全layerがそれを共有するdecoder-decoder architecture。長文でlayer数に比例して増えるKV cacheを構造的に抑える。
+
+- **[Towards Economical Inference: Enabling DeepSeek’s Multi-Head Latent Attention in Any Transformer-based LLMs](2025-2502.14837-mha2mla.md)** — cited: **未確認**（citation source: **未確認**; venue fallback: ACL 2025 Main）  
+  MHA modelをpartial-RoPEとjoint SVDでMLAへ変換するMHA2MLA。Llama2-7BでKV cacheを92.19%削減しつつ、少量の追加学習でLongBench性能をほぼ回復する。
