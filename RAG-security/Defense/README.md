@@ -4,6 +4,14 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-09-20
+
+- **[RAGSentinel: Certifiable Geometric Consensus for Robust Retrieval-Augmented Generation](2026-2608.23965-ragsentinel.md)** — cited: **未確認**（citation source: **未確認**）  
+  surrogate encoderのquery-conditioned hidden-state residualをgeometric consensusで評価し、poisoned retrieved documentsをgeneration前に除去する。honest-majority / separation条件下でpoison-free contextのcertifiable filtering条件も与える。EMNLP 2026 Main Conference。
+
+- **[TRIS: A Tri-Layer Retrieval Integrity Sieve Against Knowledge Poisoning](2026-2609.00470-tris.md)** — cited: **未確認**（citation source: **未確認**）  
+  independent embedding geometry、trigger/payload structural detection、LLM parametric-belief verificationを組み合わせ、PoisonedRAG型knowledge poisoningを低costなadaptive middlewareでfilterする。Findings of EMNLP 2026。
+
 ### 2026-09-17
 
 - **[PRAG: End-to-End Privacy-Preserving Retrieval-Augmented Generation](2026-2604.26525-prag.md)** — cited: **2**（citation source: **alphaXiv**）  
