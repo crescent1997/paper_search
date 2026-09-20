@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationを破壊・�
 
 ## 更新履歴
 
+### 2026-09-21
+
+- **[Just Ask: Curious Code Agents Reveal System Prompts in Frontier LLMs](2026-2601.21233-just-ask.md)** — cited: **未確認**（venue fallback: **ICML 2026**）  
+  system prompt extractionをblack-box online explorationとして扱い、UCBでattack skillを探索・再利用するadaptive attack。gradient/logit accessなしでhigher-privilege promptのconfidentialityを攻撃する。
+
 ### 2026-09-20
 
 - **[Prompt Injection as Role Confusion](2026-2603.12277-prompt-injection-role-confusion.md)** — cited: **未確認**（venue fallback: **ICML 2026**）  
