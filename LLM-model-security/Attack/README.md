@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationを破壊・�
 
 ## 更新履歴
 
+### 2026-09-20
+
+- **[Prompt Injection as Role Confusion](2026-2603.12277-prompt-injection-role-confusion.md)** — cited: **未確認**（venue fallback: **ICML 2026**）  
+  prompt injectionをlatent role confusionとして分析し、hidden-state Role ProbeでUserness / Assistantness / CoTnessを測定。低権限textへmodel自身のreasoningらしい偽CoTを埋め込むCoT Forgeryにより、gradient不要のrole/priority spoofing attackを提示する。
+
 ### 2026-09-19
 
 - ★ **[Universal and Transferable Adversarial Attacks on Aligned Language Models](2023-2307.15043-gcg.md)** — cited: **1230**（citation source: **arXiv.gg**）  
