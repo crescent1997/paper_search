@@ -7,6 +7,7 @@ LLM inferenceにおけるKV cacheの**軽量化・再利用・構造的削減**�
 - **[compress](compress/README.md)** — quantization、token eviction / selection、cluster / merge等により既存modelのKV cache容量・bandwidthを削減する手法
 - **[reuse](reuse/README.md)** — inter-request / inter-document / modular context caching、position-independent reuse、selective recomputation等によりprecomputed KVを再利用する手法
 - **[model](model/README.md)** — attention / decoder architecture自体を変更し、KV head数・layer数・latent dimension・cache生成回数などを構造的に削減する手法
+- **[access](access/README.md)** — decode時にquery-aware selection、sparse fetch、page/block retrieval、head specialization等で実際にread / transferするKV量を削減する手法
 
 各categoryの論文一覧・更新履歴は、それぞれのdirectory直下の `README.md` で管理する。
 
@@ -28,4 +29,4 @@ RAG-securityと同じ基準を踏襲する。
 
 RAG-securityで使っているMarkdown形式を踏襲し、front matterには少なくとも title / summary / authors_affiliations / published / publication_status / topics / cited / citation_source / url / code / last_checked を置く。
 
-本文では、概要、問題設定、先行研究からの改善点、Method / Algorithm、Experiment Setup、Main Results、重要なablation / robustness、Limitations、KV-cache taxonomy上の位置づけ、実装・研究上の示唆、関連研究を整理する。単なるabstractの言い換えではなく、詳細に読む論文を選ぶために必要なtechnical detailを優先する。
+本文では、概要、問題設定、先行研究からの改善点、Method / Algorithm、Experiment Setup、Main Results、重要なablation / robustness、Limitations、KV-cache taxonomy上の位置づけ、実装・研究上の示唆、関連研究を整理する。単なるabstractの言い換えではなく、詳細に読む論文を選ぶために必要なtechnical detailを優先する。特にdecode-time optimizationでは、KV cache容量だけでなく、1 decode stepで何token / page / head / layer分のKVをHBM/CPUから読むか、memory-bandwidth bottleneckをどう削減するか、selection/indexing overhead、実測decode latency / throughputも可能な限り記録する。
