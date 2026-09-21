@@ -6,7 +6,7 @@
 
 ### 2026-09-21
 
-- **[ProphetKV: User-Query-Driven Selective Recomputation for Efficient KV Cache Reuse in Retrieval-Augmented Generation](2026-2602.02579-prophetkv.md)** — cited: **未確認**（citation source: **未確認**; user-specified）  
+- **[ProphetKV: User-Query-Driven Selective Recomputation for Efficient KV Cache Reuse in Retrieval-Augmented Generation](2026-2602.02579-prophetkv.md)** — cited: **未確認**（citation source: **未確認**; ICML 2026; user-specified）  
   CacheBlend型selective recomputationのtoken selectionをquery-aware化し、global saliencyではなくuser queryへのsemantic relevanceで再計算tokenを優先する。全layerのquery attentionをfusionするdual-stage pipelineにより、20% recomputationでfull-prefill accuracyの96–101%を維持し、RULERで既存SOTA比8.8–24.9%、LongBenchで18.6–50.9%のaccuracy改善を報告する。
 
 ### 2026-09-20
