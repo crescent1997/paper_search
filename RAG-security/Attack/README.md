@@ -4,6 +4,11 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-09-22
+
+- **[RIPRAG: Hack a Black-box Retrieval-Augmented Generation Question-Answering System with Reinforcement Learning](2025-2510.10008-riprag.md)** — cited: **未確認**（citation source: **未確認**）  
+  target RAGをblack-box RL environmentとして扱い、最終QA feedbackからpoison generatorを適応させるknowledge-poisoning attack。BRPOとretrieval-aware rewardにより、retriever/reranker内部を知らずcomplex retrieval pipelineへ適応する。Findings of ACL 2026。
+
 ### 2026-09-16
 
 - **[E-MIA: Exam-Style Black-Box Membership Inference Attacks against RAG Systems](2026-2605.00955-e-mia.md)** — cited: **1**（citation source: **arXiv.gg**）  
