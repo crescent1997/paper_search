@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-09-22
+
+- **[HIPO: Instruction Hierarchy via Constrained Reinforcement Learning](2026-2603.16152-hipo.md)** — cited: **未確認**  
+  Hierarchical Instruction FollowingをCMDPとして定式化し、system complianceをsoft rewardではなく明示的constraintとして扱うprimal-dual safe RL。constraintを満たすfeasible region内でuser utilityを最大化し、priority asymmetryをoptimization objective自体へ組み込む。
+
 ### 2026-09-21
 
 - **[ProxyPrompt: Securing System Prompts against Prompt Extraction Attacks](2025-2505.11459-proxyprompt.md)** — cited: **未確認**（venue fallback: **Findings of ACL 2026**）  
