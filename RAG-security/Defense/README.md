@@ -4,6 +4,11 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-09-22
+
+- **[PRA-RAG: Provably Robust Aggregation in Retrieval-Augmented Generation against Retrieval Corruption](2026-2607.00012-pra-rag.md)** — cited: **未確認**（citation source: **未確認**）  
+  document subsetsのsemantic representationsからmajority minimum-radius ballを求め、weighted robust aggregationでpoisoned retrievalの影響を抑える。representation deviationの理論boundとPADを与える。Findings of ACL 2026。
+
 ### 2026-09-20
 
 - **[RAGSentinel: Certifiable Geometric Consensus for Robust Retrieval-Augmented Generation](2026-2608.23965-ragsentinel.md)** — cited: **未確認**（citation source: **未確認**）  
