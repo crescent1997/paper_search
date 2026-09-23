@@ -4,6 +4,11 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-09-24
+
+- **[ImageAuditor: Membership Inference Attack against Image-based Retrieval-Augmented Generation](2026-2606.03354-imageauditor.md)** — cited: **3**（citation source: **alphaXiv**）  
+  Image-based RAGのopaque retrieval databaseにcandidate imageが含まれるかを推定するmembership inference attack。RGPOでcross-modal retrieval queryを最適化し、task-specific extractionとmulti-query aggregationでmembership signalを取り出す。
+
 ### 2026-09-22
 
 - **[RIPRAG: Hack a Black-box Retrieval-Augmented Generation Question-Answering System with Reinforcement Learning](2025-2510.10008-riprag.md)** — cited: **未確認**（citation source: **未確認**）  
