@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-09-24
+
+- **[AlignSentinel: Alignment-Aware Detection of Prompt Injection Attacks](2026-2602.13597-alignsentinel.md)** — cited: **≥1**（citation source: **directly verified citing paper; aggregate count unavailable**）  
+  lower-priority inputをmisaligned instruction / aligned instruction / non-instructionへ分け、higher-priority instructionとのattention interactionからprompt injectionを検知するalignment-aware detector。benignなaligned instructionを攻撃と誤検知するbinary detectorの弱点を改善し、direct / indirect injectionとadaptive attackを評価する。
+
 ### 2026-09-22
 
 - **[HIPO: Instruction Hierarchy via Constrained Reinforcement Learning](2026-2603.16152-hipo.md)** — cited: **未確認**  
