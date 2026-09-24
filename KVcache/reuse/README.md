@@ -4,6 +4,14 @@
 
 ## 更新履歴
 
+### 2026-09-24
+
+- **[KVShare: An LLM Service System with Efficient and Effective Multi-Tenant KV Cache Reuse](2025-2503.16525-kvshare.md)** — cited: **未確認**（user-specified; citation threshold不適用）  
+  cross-request KV reuseをadaptive-length fragmentへ拡張し、attention-weighted deviationに基づくDual-Stage High Deviation (DHD)でprefill/decodeの両段階をselective repairする。現行v2を中心に、semantic-aware sharingを扱ったv1との大幅なversion差も明記する。
+
+- **[A³: Attention-Aware Accurate KV Cache Fusion for Fast Large Language Model Serving](2025-2511.17560-a3.md)** — cited: **未確認**（user-specified; citation threshold不適用）  
+  cached chunkのposition recoveryとquestion-to-document attentionによるtoken-level selective recomputationを組み合わせるquery-aware KV fusion。Qwen2.5-7B RULERで84.17を報告し、full prefillに対してTTFTを約2×改善する。
+
 ### 2026-09-21
 
 - **[ProphetKV: User-Query-Driven Selective Recomputation for Efficient KV Cache Reuse in Retrieval-Augmented Generation](2026-2602.02579-prophetkv.md)** — cited: **未確認**（citation source: **未確認**; ICML 2026; user-specified）  
