@@ -4,6 +4,11 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-09-25
+
+- **[RAGuard: A Layered Defense Framework for Retrieval-Augmented Generation Systems Against Data Poisoning](2026-2607.26339-raguard.md)** — cited: **4**（citation source: **ScholarBro**）  
+  adversarially trained dense retrieverと、leave-one-out counterfactual generationからpoison influenceを検出するZKIPを組み合わせるtwo-layer poisoning defense。公式codeあり。
+
 ### 2026-09-22
 
 - **[PRA-RAG: Provably Robust Aggregation in Retrieval-Augmented Generation against Retrieval Corruption](2026-2607.00012-pra-rag.md)** — cited: **未確認**（citation source: **未確認**）  
