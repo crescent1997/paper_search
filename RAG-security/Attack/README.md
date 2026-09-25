@@ -4,6 +4,14 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-09-25
+
+- **[CamoDocs: A Poisoning Attack Against Retrieval-Augmented Language Models Using Camouflaged Documents](2026-2608.28389-camodocs.md)** — cited: **1**（citation source: **Semantic Scholar**）  
+  query inclusionやpoison clusteringという既存poisoning attackの検出artifactを、benign camouflage chunksとembedding dispersion optimizationで隠すDefense-aware knowledge-poisoning attack。公式codeあり。
+
+- **[SilentRetrieval: Hijacking Retrieval-Augmented Generation via Semantically-Preserving Adversarial Data Poisoning](2026-2605.28074-silentretrieval.md)** — cited: **未確認**（citation source: **未確認**）  
+  Coordinated Beam SearchとContext-Adaptive Trigger Generationでretrieval hijacking、generation manipulation、fluencyを同時最適化し、PPL/LLM filterから検出されにくいpoisonを生成する。KDD 2026。
+
 ### 2026-09-24
 
 - **[ImageAuditor: Membership Inference Attack against Image-based Retrieval-Augmented Generation](2026-2606.03354-imageauditor.md)** — cited: **3**（citation source: **alphaXiv**）  
