@@ -23,13 +23,15 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 ## 更新履歴
 
-まだ要約登録なし。
+### 2026-09-25
+
+- **[SparQ Attention: Bandwidth-Efficient LLM Inference](2023-2312.04985-sparq-attention.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICML 2024）  
+  current queryの大きなdimensionだけで全Keyを粗くscoreし、上位tokenの完全なK/Vだけをfetchするquery-aware sparse attention。KV自体は保持したままattention data transferを最大8×削減し、GPU最大4.17×、CPU 2.5×、IPU 7.41×のattention speedupを報告する。
 
 ## Historical backfill candidates
 
 以下は優先的に精査する。
 
-- SparQ Attention (arXiv:2312.04985)
 - Quest (arXiv:2406.10774)
 - RetrievalAttention (arXiv:2409.10516)
 - DuoAttention (arXiv:2410.10819)
