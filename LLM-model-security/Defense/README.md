@@ -4,6 +4,11 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-09-26
+
+- **[IHDec: Divergence-Steered Contrastive Decoding for Securing Multi-Turn Instruction Hierarchies](2026-2606.29960-ihdec.md)** — cited: **未確認**（venue fallback: **EMNLP 2026 Findings**）  
+  multi-turnでhigher-priority roleの影響が弱まりlower-priority roleが支配的になるRole-Influence Inversionをcounterfactual next-token distributions間のJensen-Shannon divergenceで検出し、violation tokenだけcontrastive decodingで補正するtraining-free Instruction Hierarchy Defense。
+
 ### 2026-09-24
 
 - **[AlignSentinel: Alignment-Aware Detection of Prompt Injection Attacks](2026-2602.13597-alignsentinel.md)** — cited: **≥1**（citation source: **directly verified citing paper; aggregate count unavailable**）  
