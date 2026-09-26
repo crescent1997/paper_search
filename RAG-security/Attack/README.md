@@ -4,6 +4,11 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-09-26
+
+- **[InceptionRAG: Stealthy Poisoning Attack Against Retrieval-Augmented Generation](2026-2609.16818-inceptionrag.md)** — cited: **未確認**（citation source: **未確認**）  
+  malicious semanticsを複数の単独では無害なdocumentsへ分散し、同時retrieve時のmulti-hop reasoningでtarget misinformationを導出させるdistributed logical poisoning attack。ZOSOとDual-Ended Injectionによりstrict black-box環境でretrieval・authorityを適応させる。ACM CCS 2026。
+
 ### 2026-09-25
 
 - **[CamoDocs: A Poisoning Attack Against Retrieval-Augmented Language Models Using Camouflaged Documents](2026-2608.28389-camodocs.md)** — cited: **1**（citation source: **Semantic Scholar**）  
