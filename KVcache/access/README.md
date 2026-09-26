@@ -23,6 +23,11 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 ## 更新履歴
 
+### 2026-09-26
+
+- **[QUEST: Query-Aware Sparsity for Efficient Long-Context LLM Inference](2024-2406.10774-quest.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICML 2024）  
+  KV pageごとのKey min/max metadataからcurrent Queryに対するcriticality upper boundを推定し、Top-K pageだけをloadするquery-aware sparse attention。KV自体を保持したままdecode read setを疎化し、self-attention最大7.03×、end-to-end inference最大2.23×のspeedupを報告する。
+
 ### 2026-09-25
 
 - **[SparQ Attention: Bandwidth-Efficient LLM Inference](2023-2312.04985-sparq-attention.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICML 2024）  
@@ -32,7 +37,6 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 以下は優先的に精査する。
 
-- Quest (arXiv:2406.10774)
 - RetrievalAttention (arXiv:2409.10516)
 - DuoAttention (arXiv:2410.10819)
 - RetroInfer (arXiv:2505.02922)
