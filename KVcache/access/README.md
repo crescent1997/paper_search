@@ -23,6 +23,11 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 ## 更新履歴
 
+### 2026-09-27
+
+- **[DuoAttention: Efficient Long-Context LLM Inference with Retrieval and Streaming Heads](2024-2410.10819-duoattention.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICLR 2025）  
+  long-range retrievalにfull-history KVが必要な少数のRetrieval Headsだけにfull cacheを残し、Streaming Headsにはsink + recent tokenだけのconstant-length cacheを使うhead-specialized access。MHAで最大2.55×、GQAで最大1.67×のmemory削減と最大2.18×/1.50×のdecode speedupを報告する。
+
 ### 2026-09-26
 
 - **[QUEST: Query-Aware Sparsity for Efficient Long-Context LLM Inference](2024-2406.10774-quest.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICML 2024）  
@@ -38,7 +43,6 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 以下は優先的に精査する。
 
 - RetrievalAttention (arXiv:2409.10516)
-- DuoAttention (arXiv:2410.10819)
 - RetroInfer (arXiv:2505.02922)
 
 候補選定時は、KV cache容量だけでなく、1 decode stepで実際に何token / page / head / layer分を読むか、HBM/CPU transfer量、decode latency / throughput、selection/indexing overheadを重点的に確認する。
