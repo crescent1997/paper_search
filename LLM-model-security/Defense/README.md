@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-09-28
+
+- **[SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation](2026-2608.21500-secopd.md)** — cited: **未確認**（venue fallback: **EMNLP 2026**）  
+  attacked input上のstudent rolloutをclean input上のinitialization modelでtoken単位に採点するon-policy distillation。adaptive prompt injectionへのrobustnessを強化する。
+
+
 ### 2026-09-26
 
 - **[IHDec: Divergence-Steered Contrastive Decoding for Securing Multi-Turn Instruction Hierarchies](2026-2606.29960-ihdec.md)** — cited: **未確認**（venue fallback: **EMNLP 2026 Findings**）  
