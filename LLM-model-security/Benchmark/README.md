@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationの遵守能�
 
 ## 更新履歴
 
+### 2026-09-28
+
+- **[Language Shapes Instruction Hierarchy Compliance in Multilingual LLMs](2026-2607.23545-xih-bench.md)** — cited: **未確認**（venue fallback: **EMNLP 2026 Main**）  
+  6言語でInstruction Hierarchyを評価するXIH-Bench。言語依存のpriority asymmetryとLanguage Boundary Effectを分析する。
+
+
 ### 2026-09-20
 
 - **[Control Illusion: The Failure of Instruction Hierarchies in Large Language Models](2025-2502.15851-control-illusion.md)** — cited: **未確認**（venue fallback: **AAAI 2026 Main Technical Track**）  
