@@ -4,6 +4,11 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-09-27
+
+- **[Conflict-Aware Retriever Editing for Knowledge Injection Attacks on LLM-Based RAG Systems (CAREATTACK)](2026-2606.18310-careattack.md)** — cited: **6**（citation source: **alphaXiv**）  
+  corpusではなくdense retriever checkpoint自体をclosed-form editingし、target promptsでattacker-chosen passagesを上位retrieveさせるmodel-centric / supply-chain型knowledge injection attack。conflict-aware batch editingとAnchor Repairでattack effectivenessとnon-target localityを両立する。
+
 ### 2026-09-26
 
 - **[InceptionRAG: Stealthy Poisoning Attack Against Retrieval-Augmented Generation](2026-2609.16818-inceptionrag.md)** — cited: **未確認**（citation source: **未確認**）  
