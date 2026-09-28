@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationを破壊・�
 
 ## 更新履歴
 
+### 2026-09-28
+
+- **[PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses](2026-2603.13026-pismith.md)** — cited: **≥1**（citation source: **directly verified citing paper (SecOPD); aggregate count unavailable**）  
+  black-box RLによるadaptive prompt-injection red teaming。reward sparsity下でも探索を維持し、Meta SecAlign等のDefenseをadaptiveに評価する。
+
+
 ### 2026-09-21
 
 - **[Just Ask: Curious Code Agents Reveal System Prompts in Frontier LLMs](2026-2601.21233-just-ask.md)** — cited: **未確認**（venue fallback: **ICML 2026**）  
