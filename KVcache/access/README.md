@@ -23,6 +23,11 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 ## 更新履歴
 
+### 2026-09-28
+
+- **[RetrievalAttention: Accelerating Long-Context LLM Inference via Vector Retrieval](2024-2409.10516-retrievalattention.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: NeurIPS 2025 Main）  
+  KV cacheの大部分をCPU上のattention-aware ANNS indexへ置き、current Queryから重要tokenだけをretrieveするquery-aware sparse attention。Q/K distribution mismatchをprefill時のQ→K関係で補い、1–3%のKV accessでnear-full-attention accuracyを維持する。
+
 ### 2026-09-27
 
 - **[DuoAttention: Efficient Long-Context LLM Inference with Retrieval and Streaming Heads](2024-2410.10819-duoattention.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICLR 2025）  
@@ -42,7 +47,6 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 以下は優先的に精査する。
 
-- RetrievalAttention (arXiv:2409.10516)
 - RetroInfer (arXiv:2505.02922)
 
 候補選定時は、KV cache容量だけでなく、1 decode stepで実際に何token / page / head / layer分を読むか、HBM/CPU transfer量、decode latency / throughput、selection/indexing overheadを重点的に確認する。
