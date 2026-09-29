@@ -23,6 +23,11 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 ## 更新履歴
 
+### 2026-09-29
+
+- **[RetroInfer: A Vector Storage Engine for Scalable Long-Context LLM Inference](2025-2505.02922-retroinfer.md)** — cited: **1**（citation source: PVLDB article metrics; venue fallback: VLDB 2026）  
+  KV cacheをCPU-GPU vector storageとして再設計し、wave indexによるretrieval + estimationとwave bufferによるheterogeneous-memory管理を統合する。PVLDB final版で120K contextのfull attention比最大4.4×、1M contextのsparse baseline比最大12.2×のdecoding throughputを報告する。
+
 ### 2026-09-28
 
 - **[RetrievalAttention: Accelerating Long-Context LLM Inference via Vector Retrieval](2024-2409.10516-retrievalattention.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: NeurIPS 2025 Main）  
@@ -47,6 +52,5 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 以下は優先的に精査する。
 
-- RetroInfer (arXiv:2505.02922)
 
 候補選定時は、KV cache容量だけでなく、1 decode stepで実際に何token / page / head / layer分を読むか、HBM/CPU transfer量、decode latency / throughput、selection/indexing overheadを重点的に確認する。
