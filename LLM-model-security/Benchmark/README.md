@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationの遵守能�
 
 ## 更新履歴
 
+### 2026-09-29
+
+- **[IH-Benchmark: A Conflict-Centered Benchmark for Instruction-Hierarchy Robustness in LLM Applications](2026-2607.25987-ih-benchmark.md)** — cited: **1**（citation source: **Scholar Feed in-corpus citations**）  
+  2,336 scenarios / 44 constraint familiesでSystem > UserとUser > Toolを分離評価。37 modelでcomplianceが20.5–98.2%に広がり、S>U robustnessがU>Tを予測しないことやconstraint hardening / subtle tool injectionのfailureを分析する。
+
+
 ### 2026-09-28
 
 - **[Language Shapes Instruction Hierarchy Compliance in Multilingual LLMs](2026-2607.23545-xih-bench.md)** — cited: **未確認**（venue fallback: **EMNLP 2026 Main**）  
