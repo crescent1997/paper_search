@@ -4,6 +4,11 @@
 
 ## 更新履歴
 
+### 2026-09-30
+
+- **★ [Keyformer: KV Cache Reduction through Key Tokens Selection for Efficient Generative Inference](2024-2403.09054-keyformer.md)** — cited: **166**（citation source: Scholar Feed; venue: MLSys 2024）  
+  recent tokensを保護しつつGumbel-regularized attention scoreでkey tokenを選択するtraining-free KV eviction。eviction後のattention-score distribution shiftを補正し、50% KV cacheで最大2.1×のlatency改善と2.4×のtoken-generation throughput向上を報告する。
+
 ### 2026-09-24
 
 - **[Scissorhands: Exploiting the Persistence of Importance Hypothesis for LLM KV Cache Compression at Test Time](2023-2305.17118-scissorhands.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: NeurIPS 2023）  
