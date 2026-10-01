@@ -4,6 +4,11 @@
 
 ## 更新履歴
 
+### 2026-10-01
+
+- **★ [PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling](2024-2406.02069-pyramidkv.md)** — cited: **425**（citation source: Semantic Scholar-derived third-party aggregation; venue: COLM 2025）  
+  lower layerでは広く、upper layerでは少数critical tokenへattentionが集中するPyramidal Information Funnelingを利用し、layer-wiseに非均一なKV budgetを割り当てるtraining-free compression。full KVの12%で同等性能、0.7%の極端な圧縮でも既存法を大きく上回る。
+
 ### 2026-09-30
 
 - **★ [Keyformer: KV Cache Reduction through Key Tokens Selection for Efficient Generative Inference](2024-2403.09054-keyformer.md)** — cited: **166**（citation source: Scholar Feed; venue: MLSys 2024）  
