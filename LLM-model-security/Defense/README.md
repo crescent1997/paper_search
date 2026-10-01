@@ -4,6 +4,15 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-10-01
+
+- **[Steering Instruction Hierarchies at Inference Time](2026-2607.26228-v-steer.md)** — cited: **未確認**（venue fallback: **COLM 2026**）  
+  Direct Logit Attributionでlower-priority spanの寄与が強いattention headを検出し、prompt-side cached Value vectorsをboost / suppressするtraining-free V-Steer。fused attentionとKV-cached decodeを維持したままInstruction Hierarchy complianceを改善する。
+
+- **[CausalArmor: Efficient Indirect Prompt Injection Guardrails via Causal Attribution](2026-2602.07918-causalarmor.md)** — cited: **未確認**（venue fallback: **ICML 2026 / PMLR 306**）  
+  privileged actionへのuser request / untrusted spanのleave-one-out causal attributionを比較し、untrusted dominance時だけtargeted sanitizationとretroactive CoT maskingを起動するselective runtime Defense。model-intrinsicではなくprivilege mechanismの比較対象として収録。
+
+
 ### 2026-09-28
 
 - **[SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation](2026-2608.21500-secopd.md)** — cited: **未確認**（venue fallback: **EMNLP 2026**）  
