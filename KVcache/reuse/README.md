@@ -4,6 +4,11 @@
 
 ## 更新履歴
 
+### 2026-10-03
+
+- **[SpecCache: Speculative KV Cache Reuse for Efficient RAG Serving](2026-speccache.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ACL 2026 Main / Long Paper）  
+  lightweight speculative modelのdeep-layer hidden-state normをtarget LLMのcritical-token selectorとして使い、selective recomputationのselection overheadを削減する。full KV recomputation比でTTFT 2.17–3.95×短縮、throughput 2.7–5.2×向上を報告する。
+
 ### 2026-09-24
 
 - **[KVShare: An LLM Service System with Efficient and Effective Multi-Tenant KV Cache Reuse](2025-2503.16525-kvshare.md)** — cited: **未確認**（user-specified; citation threshold不適用）  
