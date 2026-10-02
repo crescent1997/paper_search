@@ -4,6 +4,11 @@ attention / decoder architectureそのものを変更し、KV head数、cached r
 
 ## 更新履歴
 
+### 2026-10-02
+
+- **★ [Reducing Transformer Key-Value Cache Size with Cross-Layer Attention](2024-2405.12981-cross-layer-attention.md)** — cited: **131**（citation source: Scholar Feed; venue: NeurIPS 2024 Main）  
+  MQA/GQAのhead-wise KV sharingをlayer方向へ拡張し、隣接layer間でK/V activationsを共有するarchitecture-level reduction。CLA2ではMQA比でKV cacheをさらに約2×削減しつつ、ほぼ同等のaccuracyを維持する。
+
 ### 2026-09-24
 
 - **[GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](2023-2305.13245-gqa.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: EMNLP 2023 Main）  
