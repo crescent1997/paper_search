@@ -4,6 +4,15 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-10-04
+
+- **[Beyond Oracle: Verifier-Supervision for Instruction Hierarchy in Reasoning and Instruction-Tuned LLMs](2025-2510.00586-beyond-oracle.md)** — cited: **4**（citation source: **ScholarBro**; venue fallback: **NeurIPS 2025 Main**）  
+  higher-priority directiveへのcomplianceをexecutable verifierで判定し、oracle response / CoT supervisionなしにSFT・GRPOするInstruction Hierarchy alignment。unit-testとrepair loopで22,922件のverified examplesを構築する。
+
+- **[Don't Forget the Enjoin: FocalLoRA for Instruction Hierarchical Alignment in Large Language Models](2025-2502.05416-focallora.md)** — cited: **未確認**（venue fallback: **NeurIPS 2025 Main**）  
+  normal/conflict prompt間のattention変化からFocal Headsを同定し、そのQ/K projectionだけへLoRAとFocus Lossを適用するparameter-efficient hierarchy alignment。V-Steerにつながるattention-head-level interventionの先行研究。
+
+
 ### 2026-10-01
 
 - **[Steering Instruction Hierarchies at Inference Time](2026-2607.26228-v-steer.md)** — cited: **未確認**（venue fallback: **COLM 2026**）  
