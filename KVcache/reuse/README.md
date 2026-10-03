@@ -4,6 +4,14 @@
 
 ## 更新履歴
 
+### 2026-10-04
+
+- **[RelayCaching: Accelerating LLM Collaboration via Decoding KV Cache Reuse](2026-2603.13289-relaycaching.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICML 2026）  
+  upstream agentのdecode KVをdownstream agentのprefillへrelayし、prefix差による局所的deviationだけをlayer/token単位でrepairする。80%以上のKV reuseと最大4.7×のTTFT短縮を報告する。
+
+- **[C²KV: Compressed and Composable KV Cache Reuse for Efficient LLM Inference](2026-2607.17715-c2kv.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: KDD 2026）  
+  lightweight sidecar extractorでcompressed・position-agnostic・composableなreuse representationを学習し、full-size KVのstorage/transfer bottleneckも削減する。長contextで最大17×のinference speedupを報告する。
+
 ### 2026-10-03
 
 - **[SpecCache: Speculative KV Cache Reuse for Efficient RAG Serving](2026-speccache.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ACL 2026 Main / Long Paper）  
