@@ -4,6 +4,11 @@ attention / decoder architectureそのものを変更し、KV head数、cached r
 
 ## 更新履歴
 
+### 2026-10-04
+
+- **[Reconstructing KV Caches with Cross-Layer Fusion for Enhanced Transformers (FusedKV)](2025-2512.03870-fusedkv.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICLR 2026）  
+  Valueはbottom layer、Keyはbottom/middle layerから強く情報を継承する非対称性を利用してtop-layer KVを再構成する。332M–4BでKV cache memoryを50%削減しつつstandard Transformerより低いvalidation perplexityを報告する。
+
 ### 2026-10-02
 
 - **★ [Reducing Transformer Key-Value Cache Size with Cross-Layer Attention](2024-2405.12981-cross-layer-attention.md)** — cited: **131**（citation source: Scholar Feed; venue: NeurIPS 2024 Main）  
