@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationを破壊・�
 
 ## 更新履歴
 
+### 2026-10-05
+
+- **[Will the User Ever Know? Covert Indirect Prompt Injection Attacks on Tool-Using LLM Agents](2026-2608.30362-icoa.md)** — cited: **未確認**（venue fallback: **EMNLP 2026 Main**）  
+  malicious tool action後にRETURN anchorでoriginal taskへ戻り、最終回答から攻撃痕跡を隠すblack-box ICoA。ASRをCovert Success Rate / Overt Success Rateへ分解し、User > Tool violation後のuser observabilityを評価する。
+
+
 ### 2026-09-28
 
 - **[PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses](2026-2603.13026-pismith.md)** — cited: **≥1**（citation source: **directly verified citing paper (SecOPD); aggregate count unavailable**）  
