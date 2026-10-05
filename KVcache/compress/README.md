@@ -4,6 +4,17 @@
 
 ## 更新履歴
 
+### 2026-10-05
+
+- **[DynamicKV: Task-Aware Adaptive KV Cache Compression for Long Context LLMs](2024-2412.14838-dynamickv.md)** — cited: **39**（citation source: ResearchGate; venue: Findings of EMNLP 2025）  
+  task/inputごとに異なるattention patternを使い、global budgetをlayer間でruntimeに動的配分するtraining-free compression。PyramidKVのstatic layer allocationをtask-awareに拡張。
+
+- **[Ada-KV: Optimizing KV Cache Eviction by Adaptive Budget Allocation for Efficient LLM Inference](2024-2407.11550-adakv.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: NeurIPS 2025）  
+  eviction errorの理論boundを動機に、各attention headへadaptiveにKV budgetを配るplug-and-play allocator。SnapKV/PyramidKV等と組み合わせ可能。
+
+- **[ZipCache: Accurate and Efficient KV Cache Quantization with Salient Token Identification](2024-2405.14256-zipcache.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: NeurIPS 2024）  
+  normalized attention saliencyとprobe-based estimationを使い、重要tokenを高precisionで保持するmixed-precision KV quantization。
+
 ### 2026-10-01
 
 - **★ [PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling](2024-2406.02069-pyramidkv.md)** — cited: **425**（citation source: Semantic Scholar-derived third-party aggregation; venue: COLM 2025）  
