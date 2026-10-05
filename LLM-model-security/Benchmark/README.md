@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationの遵守能�
 
 ## 更新履歴
 
+### 2026-10-05
+
+- **[Rethinking Assessments of Prompt Injection Attacks](2026-acl-findings-1191-rethinking-prompt-injection-assessments.md)** — cited: **未確認**（venue fallback: **Findings of ACL 2026**）  
+  8 evaluation settings / 37 applications / 185 injected tasks / 21 attack instructions / 143,745 queriesでprompt-injection attack・Defenseのexternal validityを再評価。in-lab結果がreal-world applicationへ一般化しない問題を分析する。
+
+
 ### 2026-09-29
 
 - **[IH-Benchmark: A Conflict-Centered Benchmark for Instruction-Hierarchy Robustness in LLM Applications](2026-2607.25987-ih-benchmark.md)** — cited: **1**（citation source: **Scholar Feed in-corpus citations**）  
