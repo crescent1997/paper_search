@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-10-05
+
+- **[Know Thy Enemy: Securing LLMs Against Prompt Injection via Diverse Data Synthesis and Instruction-Level Chain-of-Thought Learning](2026-2601.04666-instrucot.md)** — cited: **未確認**（venue fallback: **Findings of ACL 2026**）  
+  source / position / attack objectiveを多様化した合成データとinstruction-level CoTで、context内instructionの認識・security conflict reasoning・malicious instruction拒否をmodel自身へ学習させるInstruCoT。
+
+
 ### 2026-10-04
 
 - **[Beyond Oracle: Verifier-Supervision for Instruction Hierarchy in Reasoning and Instruction-Tuned LLMs](2025-2510.00586-beyond-oracle.md)** — cited: **4**（citation source: **ScholarBro**; venue fallback: **NeurIPS 2025 Main**）  
