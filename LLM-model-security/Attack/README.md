@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationを破壊・�
 
 ## 更新履歴
 
+### 2026-10-06
+
+- **[ChatInject: Abusing Chat Templates for Prompt Injection in LLM Agents](2025-2509.22830-chatinject.md)** — cited: **16**（citation source: **Lune**; venue: **ICLR 2026**）  
+  low-trust tool output内にnative chat-templateのsystem/user/assistant role structureを偽造するpriority/role spoofing attack。Multi-turn persuasion、cross-model transfer、Mixture-of-Templatesによりunknown-templateのblack-box settingにも拡張する。
+
+
 ### 2026-10-05
 
 - **[Will the User Ever Know? Covert Indirect Prompt Injection Attacks on Tool-Using LLM Agents](2026-2608.30362-icoa.md)** — cited: **未確認**（venue fallback: **EMNLP 2026 Main**）  
