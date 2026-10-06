@@ -4,6 +4,17 @@
 
 ## 更新履歴
 
+### 2026-10-06
+
+- **★ [Prompt Cache: Modular Attention Reuse for Low-Latency Inference](2023-2311.04934-prompt-cache.md)** — cited: **320**（citation source: Scholar Feed; venue: MLSys 2024）  
+  prompt moduleとschema-defined logical positionにより、prefix完全一致に限定されないmodular KV reuseを実現する初期重要研究。model変更なしでGPU最大8×、CPU最大60×のTTFT改善を報告する。
+
+- **[Cache-Craft: Managing Chunk-Caches for Efficient Retrieval-Augmented Generation](2025-2502.15734-cache-craft.md)** — cited: **未確認**（citation source: 信頼値未取得; venue fallback: SIGMOD 2025）  
+  RAG chunk-cacheのcontext dependencyを推定し、selected tokenだけを再計算してreuse品質を修復。cache management、I/O overlap、scattered-query向けTriton attentionまで含むend-to-end system。
+
+- **★ [KVLink: Accelerating Large Language Models via Efficient KV Cache Reuse](2025-2502.16002-kvlink.md)** — cited: **75**（citation source: Scholar Feed; venue: NeurIPS 2025 Main）  
+  independently prefetched document KVのpositionを補正し、失われるcross-document interactionをtrainable link tokensで補うreuse-aware fine-tuning。standard inference比で最大96%のTTFT削減を報告する。
+
 ### 2026-10-04
 
 - **[RelayCaching: Accelerating LLM Collaboration via Decoding KV Cache Reuse](2026-2603.13289-relaycaching.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICML 2026）  
