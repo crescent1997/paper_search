@@ -4,6 +4,11 @@ attention / decoder architectureそのものを変更し、KV head数、cached r
 
 ## 更新履歴
 
+### 2026-10-07
+
+- **[KVSharer: Efficient Inference via Layer-Wise Dissimilar KV Cache Sharing](2024-2410.18517-kvsharer.md)** — cited: **39**（citation source: Scholar Feed; status: arXiv / Under Review by ICLR 2025）  
+  pretrained Transformerのselected layers間でKV cacheを共有し、約30%のKV computation削減と1.3×以上のgeneration speedupを報告する。CLA等のarchitecture-level sharingとは異なり、既存modelのlayer redundancyを利用する。
+
 ### 2026-10-04
 
 - **[Reconstructing KV Caches with Cross-Layer Fusion for Enhanced Transformers (FusedKV)](2025-2512.03870-fusedkv.md)** — cited: **未確認**（citation source: Google Scholar信頼値未取得; venue fallback: ICLR 2026）  
