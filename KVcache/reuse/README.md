@@ -4,6 +4,14 @@
 
 ## 更新履歴
 
+### 2026-10-07
+
+- **★ [RAGCache: Efficient Knowledge Caching for Retrieval-Augmented Generation](2024-2404.12457-ragcache.md)** — cited: **145**（citation source: Scholar Feed; publication: ACM TOCS）  
+  prefix-sensitiveなknowledge treeでRAG document KVをcross-request reuseし、GPU/host階層cache、PGDSF eviction、cache-aware schedulingを組み合わせる。vLLM+Faiss比でTTFT最大4×、throughput最大2.1×改善。
+
+- **[Faster and Longer Context-Augmented Generation via Adaptive Parallel Encoding (APE)](2025-2502.05431-ape.md)** — cited: **未確認**（citation source: 信頼値未取得; venue fallback: ICLR 2025）  
+  independent parallel encodingのattention distribution差をshared prefix、temperature、scalingで補正し、selective recomputationなしでsequential encodingに近い品質を狙うtraining-free手法。
+
 ### 2026-10-06
 
 - **★ [Prompt Cache: Modular Attention Reuse for Low-Latency Inference](2023-2311.04934-prompt-cache.md)** — cited: **320**（citation source: Scholar Feed; venue: MLSys 2024）  
