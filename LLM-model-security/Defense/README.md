@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-10-07
+
+- **[ASIDE: Architectural Separation of Instructions and Data in Language Models](2025-2503.10566-aside.md)** — cited: **未確認**（venue fallback: **ICLR 2026**）  
+  data token embeddingだけに固定orthogonal rotationを適用し、instruction/dataをarchitecture-levelに異なるrepresentationへ分離するparameter-free Defense。専用adversarial trainingなしでもprompt-injection ASRを低減し、ChatInject型role spoofingに対するprovenance-aware representationの比較対象となる。
+
+
 ### 2026-10-05
 
 - **[Know Thy Enemy: Securing LLMs Against Prompt Injection via Diverse Data Synthesis and Instruction-Level Chain-of-Thought Learning](2026-2601.04666-instrucot.md)** — cited: **未確認**（venue fallback: **Findings of ACL 2026**）  
