@@ -4,6 +4,11 @@ attention / decoder architectureそのものを変更し、KV head数、cached r
 
 ## 更新履歴
 
+### 2026-10-08
+
+- **[Layer-Condensed KV Cache (LCKV)](2024-lckv.md)** — cited: **23（Semantic Scholar系二次集計）** / **ACL 2024 Main**。upper-layer KVを複数layerから共有する構造的削減。
+- **[A Systematic Study of Cross-Layer KV Sharing](2025-cross-layer-kv-sharing-systematic.md)** — cited: **17（Semantic Scholar系二次集計）** / **NAACL 2025 Short**。LCKV/CLA/YOCO等をsharing topologyで統一比較。
+
 ### 2026-10-07
 
 - **[KVSharer: Efficient Inference via Layer-Wise Dissimilar KV Cache Sharing](2024-2410.18517-kvsharer.md)** — cited: **39**（citation source: Scholar Feed; status: arXiv / Under Review by ICLR 2025）  
