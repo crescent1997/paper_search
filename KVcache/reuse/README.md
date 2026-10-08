@@ -4,6 +4,10 @@
 
 ## 更新履歴
 
+### 2026-10-08
+
+- **[TurboRAG](2025-turborag.md)** — cited: **7（secondary source、直接検証未完）** / venue fallback: **EMNLP 2025 Main**。offline chunk KV precomputationとindependent attention / reordered RoPEによるRAG TTFT短縮。平均8.6×、最大9.4×を報告。
+
 ### 2026-10-07
 
 - **★ [RAGCache: Efficient Knowledge Caching for Retrieval-Augmented Generation](2024-2404.12457-ragcache.md)** — cited: **145**（citation source: Scholar Feed; publication: ACM TOCS）  
