@@ -4,6 +4,18 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-10-08
+
+- **[M³Att: Knowledge Poisoning Attacks on Medical Multi-Modal Retrieval-Augmented Generation](2026-2605.10253-m3att.md)** — cited: **1**（citation source: **Scholar Feed**）  
+  Medical multimodal RAGでquery-agnosticなimage/text poisoningを検証。画像retrievalを操作し、医学的曖昧性を使うcovert misinformationで回答を誘導する。ACL 2026。
+
+- **[MIRAGE: Misleading Retrieval-Augmented Generation via Black-box and Query-agnostic Poisoning Attacks](2025-2512.08289-mirage.md)** — cited: **4**（citation source: **Scholar Feed、total**）  
+  Persona-driven query synthesis、semantic anchoring、Test-Time Preference Optimizationで未知queryへのblack-box poisoningを検証する。
+
+- **[Semantic Chameleon: Corpus-Dependent Poisoning Attacks and Defenses in RAG Systems](2026-2603.18034-semantic-chameleon.md)** — cited: **1**（citation source: **Scholar Feed**）  
+  Dual-document poisoningとdense/hybrid retrievalの相互作用を評価。adaptive optimizationとcorpus依存性がdefense robustnessに影響する。
+
+
 ### 2026-09-27
 
 - **[Conflict-Aware Retriever Editing for Knowledge Injection Attacks on LLM-Based RAG Systems (CAREATTACK)](2026-2606.18310-careattack.md)** — cited: **6**（citation source: **alphaXiv**）  
