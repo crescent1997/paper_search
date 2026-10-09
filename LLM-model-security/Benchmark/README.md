@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationの遵守能�
 
 ## 更新履歴
 
+### 2026-10-09
+
+- **[Security–Fidelity Tradeoffs: The Hidden Cost of Prompt Injection Defense](2026-2606.30783-secfid.md)** — cited: **未確認**（venue: **ICML 2026**）  
+  prompt injection防御のSecurityとFidelityを分離して評価するSecFid benchmark。
+
+
 ### 2026-10-05
 
 - **[Rethinking Assessments of Prompt Injection Attacks](2026-acl-findings-1191-rethinking-prompt-injection-assessments.md)** — cited: **未確認**（venue fallback: **Findings of ACL 2026**）  
