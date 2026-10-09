@@ -4,6 +4,11 @@
 
 ## 更新履歴
 
+### 2026-10-09
+
+- **[LinearKV: One Cached State Suffices for Position-Independent Caching in Hybrid LLMs](2026-2608.11231-linearkv.md)** — ユーザー指定・citation基準免除（引用数未確認）/ arXiv 2026。Hybrid LLMで単一cached recurrent stateを使い、Mamba-2のcomposition誤差を回避する。
+- **[HYPIC: Accelerating Hybrid-Attention LLM Serving with Position-Independent Caching](2026-2607.01299-hypic.md)** — ユーザー指定・citation基準免除（引用数未確認）/ arXiv 2026。transition-aware state composition、seam recomputation、cold-segment並列prefill。
+
 ### 2026-10-08
 
 - **[TurboRAG](2025-turborag.md)** — cited: **7（secondary source、直接検証未完）** / venue fallback: **EMNLP 2025 Main**。offline chunk KV precomputationとindependent attention / reordered RoPEによるRAG TTFT短縮。平均8.6×、最大9.4×を報告。
