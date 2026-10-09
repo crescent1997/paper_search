@@ -4,6 +4,10 @@ attention / decoder architectureそのものを変更し、KV head数、cached r
 
 ## 更新履歴
 
+### 2026-10-09
+
+- **★ [DeepSeek-V2: Multi-head Latent Attention (MLA)](2024-2405.04434-deepseek-v2-mla.md)** — cited: **1,411**（Scholar Feed、前回調査値）/ arXiv technical report 2024。joint low-rank KV latent、decoupled RoPE、projection absorptionでcache量を構造的に削減。
+
 ### 2026-10-08
 
 - **[Layer-Condensed KV Cache (LCKV)](2024-lckv.md)** — cited: **23（Semantic Scholar系二次集計）** / **ACL 2024 Main**。upper-layer KVを複数layerから共有する構造的削減。
