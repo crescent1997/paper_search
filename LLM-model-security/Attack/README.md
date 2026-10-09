@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege Separationを破壊・�
 
 ## 更新履歴
 
+### 2026-10-09
+
+- **[Backdoor-Powered Prompt Injection Attacks Nullify Defense Methods](2025-2510.03705-backdoor-powered-prompt-injection.md)** — cited: **未確認**（venue: **Findings of EMNLP 2025**）  
+  SFT poisoningでtriggered backdoorを形成し、StruQ / SecAlignによる後続defense後も残るprivilege-separation脆弱性を評価。
+
+
 ### 2026-10-06
 
 - **[ChatInject: Abusing Chat Templates for Prompt Injection in LLM Agents](2025-2509.22830-chatinject.md)** — cited: **16**（citation source: **Lune**; venue: **ICLR 2026**）  
