@@ -4,6 +4,12 @@ Instruction Hierarchy / Instruction Priority / Privilege SeparationをLLM自身�
 
 ## 更新履歴
 
+### 2026-10-09
+
+- **[Robustness via Referencing: Defending against Prompt Injection Attacks by Referencing the Executed Instruction](2025-2504.20472-robustness-via-referencing.md)** — cited: **19 / Scholar Feed**（venue: **Findings of ACL 2026**）  
+  executed-instruction tagとoutput filteringを用いるprompt-injection defense。
+
+
 ### 2026-10-07
 
 - **[ASIDE: Architectural Separation of Instructions and Data in Language Models](2025-2503.10566-aside.md)** — cited: **未確認**（venue fallback: **ICLR 2026**）  
