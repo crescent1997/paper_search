@@ -4,6 +4,16 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-10-10
+
+- **[Graphs Don't Stay Secret (GRASP)](2026-2602.06495-graphs-dont-stay-secret-grasp.md)** — cited: **1**（Scholar Feed）  
+  Graph RAGの非公開knowledge graphからtyped relationを復元するsubgraph reconstructionを評価。arXiv preprint。
+- **[Do Multimodal RAG Systems Leak Data?](2026-2601.17644-multimodal-rag-leak-data.md)** — cited: **未確認**（source: 未確認）  
+  Multimodal RAGで画像のmembership inferenceとprivate caption extractionを評価。Findings of ACL 2026。
+- **[MrM: Black-Box Membership Inference Attacks Against Multimodal RAG Systems](2025-2506.07399-mrm-multimodal-rag-mia.md)** — cited: **未確認**（source: 未確認）  
+  Object maskingとcounterfactual modelによるmultimodal RAG membership inference。AAAI 2026。
+
+
 ### 2026-10-08
 
 - **[M³Att: Knowledge Poisoning Attacks on Medical Multi-Modal Retrieval-Augmented Generation](2026-2605.10253-m3att.md)** — cited: **1**（citation source: **Scholar Feed**）  
