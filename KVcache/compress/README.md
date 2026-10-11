@@ -4,6 +4,10 @@
 
 ## 更新履歴
 
+### 2026-10-12
+
+- **[RocketKV](2025-2502.14051-rocketkv.md)** — cited: 38 (Scholar Feed); ICML 2025. Two-stage KV compression and sparse decoding.
+
 ### 2026-10-05
 
 - **[DynamicKV: Task-Aware Adaptive KV Cache Compression for Long Context LLMs](2024-2412.14838-dynamickv.md)** — cited: **39**（citation source: ResearchGate; venue: Findings of EMNLP 2025）  
