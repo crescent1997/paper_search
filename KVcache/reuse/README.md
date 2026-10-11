@@ -4,6 +4,10 @@
 
 ## 更新履歴
 
+### 2026-10-10
+
+- **[CacheClip](2025-2510.10129-cacheclip.md)** — cited: 11 (Scholar Feed); arXiv preprint v2.
+
 ### 2026-10-09
 
 - **[LinearKV: One Cached State Suffices for Position-Independent Caching in Hybrid LLMs](2026-2608.11231-linearkv.md)** — ユーザー指定・citation基準免除（引用数未確認）/ arXiv 2026。Hybrid LLMで単一cached recurrent stateを使い、Mamba-2のcomposition誤差を回避する。
