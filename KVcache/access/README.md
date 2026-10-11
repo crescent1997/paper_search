@@ -23,6 +23,11 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 ## 更新履歴
 
+### 2026-10-12
+
+- **★ [InfiniGen](2024-2406.19707-infinigen.md)** — cited: 320 (Scholar Feed); OSDI 2024. Layer-ahead sparse KV prefetching from CPU.
+- **★ [Loki](2024-2406.02542-loki.md)** — cited: 75 (Scholar Feed); NeurIPS 2024. PCA-based approximate score for sparse KV access.
+
 ### 2026-09-29
 
 - **[RetroInfer: A Vector Storage Engine for Scalable Long-Context LLM Inference](2025-2505.02922-retroinfer.md)** — cited: **1**（citation source: PVLDB article metrics; venue fallback: VLDB 2026）  
