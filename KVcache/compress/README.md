@@ -4,6 +4,18 @@
 
 ## 更新履歴
 
+### 2026-10-14
+
+- **[Palu](2024-2407.21118-palu.md)** — cited: 45 (Scholar Feed, previous survey); ICLR 2025. Post-training low-rank latent KV caching.
+- **★ [ThinK](2024-2407.21018-think.md)** — cited: 69 (Scholar Feed, previous survey); ICLR 2025. Query-driven Key channel pruning.
+- **★ [CacheGen](2023-2310.07240-cachegen.md)** — cited: 305 (Scholar Feed, previous survey); SIGCOMM 2024. Bandwidth-adaptive compressed KV transport.
+
+### 2026-10-13
+
+- **★ [MiniCache](2024-2405.14366-minicache.md)** — cited: 146 (Scholar Feed); NeurIPS 2024. Cross-layer KV merging.
+- **★ [GEAR](2024-2403.05527-gear.md)** — cited: 188 (Semantic Scholar secondary report); 2024 preprint. Low-rank and sparse quantization error correction.
+- **★ KVQuant** — cited: 642 (Scholar Feed); NeurIPS 2024. Summary completed but upload pending.
+
 ### 2026-10-12
 
 - **[RocketKV](2025-2502.14051-rocketkv.md)** — cited: 38 (Scholar Feed); ICML 2025. Two-stage KV compression and sparse decoding.
