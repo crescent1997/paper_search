@@ -23,6 +23,11 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 ## 更新履歴
 
+### 2026-10-14（未登録分の反映）
+
+- **★ [ShadowKV](2024-2410.21465-shadowkv.md)** — cited: 128 (Scholar Feed, previous survey); ICML 2025. Hierarchical sparse KV retrieval.
+- **★ [MagicPIG](2024-2410.16179-magicpig.md)** — cited: 117 (Scholar Feed, previous survey); ICLR 2025. LSH-based sampling for decode attention.
+
 ### 2026-10-12
 
 - **★ [InfiniGen](2024-2406.19707-infinigen.md)** — cited: 320 (Scholar Feed); OSDI 2024. Layer-ahead sparse KV prefetching from CPU.
