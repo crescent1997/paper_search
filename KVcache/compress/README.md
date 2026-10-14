@@ -4,6 +4,11 @@
 
 ## 更新履歴
 
+### 2026-10-14（未登録分の反映）
+
+- **★ [KVQuant](2024-2401.18079-kvquant.md)** — cited: 642 (Scholar Feed, previous survey); NeurIPS 2024. Pre-RoPE low-bit KV quantization.
+- **★ [RazorAttention](2024-2407.15891-razorattention.md)** — cited: 107 (Scholar Feed, previous survey); arXiv 2024. Retrieval-head-aware KV compression.
+
 ### 2026-10-14
 
 - **[Palu](2024-2407.21118-palu.md)** — cited: 45 (Scholar Feed, previous survey); ICLR 2025. Post-training low-rank latent KV caching.
@@ -14,7 +19,6 @@
 
 - **★ [MiniCache](2024-2405.14366-minicache.md)** — cited: 146 (Scholar Feed); NeurIPS 2024. Cross-layer KV merging.
 - **★ [GEAR](2024-2403.05527-gear.md)** — cited: 188 (Semantic Scholar secondary report); 2024 preprint. Low-rank and sparse quantization error correction.
-- **★ KVQuant** — cited: 642 (Scholar Feed); NeurIPS 2024. Summary completed but upload pending.
 
 ### 2026-10-12
 
