@@ -4,6 +4,11 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-10-18
+
+- **[Adaptive Backtracking for Privacy Protection in Large Language Models (ABack)](2025-2508.06087-adaptive-backtracking-aback.md)** — cited: **未確認**（citation source: **未確認**）  
+  Retrieved documentsのPII漏洩兆候をtoken-levelで監視し、漏洩前の位置へ巻き戻してprivacy-awareに再生成するdecoding-time defense。Findings of ACL 2026。Hard/Soft Matching、PriGenQA、GRPO attacker、latencyとprivacy–utility tradeoffを評価。
+
 ### 2026-09-25
 
 - **[RAGuard: A Layered Defense Framework for Retrieval-Augmented Generation Systems Against Data Poisoning](2026-2607.26339-raguard.md)** — cited: **4**（citation source: **ScholarBro**）  
