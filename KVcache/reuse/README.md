@@ -4,9 +4,46 @@
 
 ## 更新履歴
 
+### 2026-10-19
+
+- **★ [PagedAttention](2023-2309.06180-pagedattention.md)** — cited: 8,027 (Scholar Feed); SOSP 2023  
+  KV cacheを固定長blockへ分割して論理位置と物理配置を分離する。reference countingとcopy-on-writeで共通prefixを物理共有し、servingのmemory fragmentationと重複保存を削減する。
+
+### 2026-10-19
+
+- **[ChunkAttention](2024-2402.15220-chunkattention.md)** — cited: 未確認 (ACL 2024 Main venue fallback)  
+  Prefix-Aware KV Cacheで複数requestの共通prefixを共有し、Two-Phase Partitionで共有chunkへのattentionをまとめて計算する。decode時の共有prefix処理をmatrix-matrix演算へ変換する。
+
+### 2026-10-18
+
+- **★ [Mooncake](2024-2407.00079-mooncake.md)** — cited: 248 (Scholar Feed); FAST 2025 Best Paper  
+  Prefill/decode分離に分散KV cacheを組み合わせ、CPU DRAM・SSD・RDMA間でKVを再利用する。cache-aware schedulingと非同期転送によりprefill計算とTTFTを削減する。
+
+### 2026-10-18
+
+- **★ [Preble](2024-2407.00023-preble.md)** — cited: 82 (Scholar Feed); ICLR 2025 Main  
+  複数GPU間のprefix reuseとload balancingを同時に最適化するcache-aware scheduler。既存prefixを活用しつつ特定GPUへのrequest集中を避ける。
+
+### 2026-10-17
+
+- **★ [SGLang](2023-2312.07104-sglang.md)** — cited: 1,318 (Scholar Feed); NeurIPS 2024 Main  
+  RadixAttentionのradix treeで共有prefix KVを管理し、reference counting・LRU eviction・cache-aware schedulingで再利用率を高める。
+
+### 2026-10-17
+
+- **★ [Hydragen](2024-2402.05099-hydragen.md)** — cited: 83 (Scholar Feed); arXiv 2024  
+  共有prefixとrequest固有suffixのattentionを分離し、log-sum-expで正確に統合する。共有KVに対する複数Queryの計算をまとめ、decodeのmemory bandwidth効率を高める。
+
+### 2026-10-17
+
+- **[KVPR](2024-2411.17089-kvpr.md)** — cited: 未確認 (Findings of ACL 2025 venue fallback)  
+  CPUからのKV転送とGPU上でのKV再計算を状況に応じて使い分ける。再計算を精度修復ではなく通信コスト削減に利用する。
+
+
 ### 2026-10-10
 
-- **[CacheClip](2025-2510.10129-cacheclip.md)** — cited: 11 (Scholar Feed); arXiv preprint v2.
+- **[CacheClip](2025-2510.10129-cacheclip.md)** — cited: 11 (Scholar Feed); arXiv preprint v2.  
+  再利用KVのcontext mismatchに着目し、cached representationを軽量に補正してprefillの再計算負担を抑える。
 
 ### 2026-10-09
 
