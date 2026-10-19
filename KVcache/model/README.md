@@ -6,8 +6,10 @@ attention / decoder architectureそのものを変更し、KV head数、cached r
 
 ### 2026-10-10
 
-- **[MLKV](2024-2406.09297-mlkv.md)** — cited: 23 (Scholar Feed); arXiv preprint.
-- **[Cost-Optimal GQA](2025-2503.09579-cost-optimal-gqa.md)** — citation count unavailable; EMNLP 2025 Main venue fallback.
+- **[MLKV](2024-2406.09297-mlkv.md)** — cited: 23 (Scholar Feed); arXiv preprint.  
+  複数のTransformer layer間でKV cacheを共有する構造を導入し、layer数に比例するKVメモリを削減する。
+- **[Cost-Optimal GQA](2025-2503.09579-cost-optimal-gqa.md)** — citation count unavailable; EMNLP 2025 Main venue fallback.  
+  KV head数と計算・メモリコストの関係を定量化し、推論コスト制約下で適切なGrouped-Query Attention構成を検討する。
 
 ### 2026-10-09
 
