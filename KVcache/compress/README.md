@@ -4,25 +4,39 @@
 
 ## 更新履歴
 
+### 2026-10-16
+
+- **[TurboQuant](2025-2504.19874-turboquant.md)** — cited: 未確認 (ICLR 2026 Main venue fallback)  
+  ランダム回転と量子化器を組み合わせ、QK内積の誤差を抑えながらKV cacheを低bit化する。残差補正によって長文推論の品質維持を狙う。
+
+
 ### 2026-10-14（未登録分の反映）
 
-- **★ [KVQuant](2024-2401.18079-kvquant.md)** — cited: 642 (Scholar Feed, previous survey); NeurIPS 2024. Pre-RoPE low-bit KV quantization.
-- **★ [RazorAttention](2024-2407.15891-razorattention.md)** — cited: 107 (Scholar Feed, previous survey); arXiv 2024. Retrieval-head-aware KV compression.
+- **★ [KVQuant](2024-2401.18079-kvquant.md)** — cited: 642 (Scholar Feed, previous survey); NeurIPS 2024. Pre-RoPE low-bit KV quantization.  
+  RoPE適用前のKeyとValueの分布差を利用した低bit KV量子化。attention精度を維持しながらcache容量と転送帯域を削減する。
+- **★ [RazorAttention](2024-2407.15891-razorattention.md)** — cited: 107 (Scholar Feed, previous survey); arXiv 2024. Retrieval-head-aware KV compression.  
+  長距離情報を検索するretrieval headを識別し、それ以外のheadのKVを大幅に圧縮する。headごとの役割差を利用して品質低下を抑える。
 
 ### 2026-10-14
 
-- **[Palu](2024-2407.21118-palu.md)** — cited: 45 (Scholar Feed, previous survey); ICLR 2025. Post-training low-rank latent KV caching.
-- **★ [ThinK](2024-2407.21018-think.md)** — cited: 69 (Scholar Feed, previous survey); ICLR 2025. Query-driven Key channel pruning.
-- **★ [CacheGen](2023-2310.07240-cachegen.md)** — cited: 305 (Scholar Feed, previous survey); SIGCOMM 2024. Bandwidth-adaptive compressed KV transport.
+- **[Palu](2024-2407.21118-palu.md)** — cited: 45 (Scholar Feed, previous survey); ICLR 2025. Post-training low-rank latent KV caching.  
+  KVを低ランクlatent表現で保持し、attention時に必要な情報を再構成するpost-training圧縮。モデル全体の再学習を避けながらcacheを小さくする。
+- **★ [ThinK](2024-2407.21018-think.md)** — cited: 69 (Scholar Feed, previous survey); ICLR 2025. Query-driven Key channel pruning.  
+  Queryに対する重要度からKeyのchannelを選び、token方向ではなくfeature次元方向にKV cacheを削減する。
+- **★ [CacheGen](2023-2310.07240-cachegen.md)** — cited: 305 (Scholar Feed, previous survey); SIGCOMM 2024. Bandwidth-adaptive compressed KV transport.  
+  KV cacheを圧縮して転送するための符号化方式と帯域適応を組み合わせ、GPU間・階層間のKV転送コストを削減する。
 
 ### 2026-10-13
 
-- **★ [MiniCache](2024-2405.14366-minicache.md)** — cited: 146 (Scholar Feed); NeurIPS 2024. Cross-layer KV merging.
-- **★ [GEAR](2024-2403.05527-gear.md)** — cited: 188 (Semantic Scholar secondary report); 2024 preprint. Low-rank and sparse quantization error correction.
+- **★ [MiniCache](2024-2405.14366-minicache.md)** — cited: 146 (Scholar Feed); NeurIPS 2024. Cross-layer KV merging.  
+  隣接layer間で類似するKV表現をmergeし、layer方向の冗長性を削減する。必要時には統合表現から各layerのKVを復元する。
+- **★ [GEAR](2024-2403.05527-gear.md)** — cited: 188 (Semantic Scholar secondary report); 2024 preprint. Low-rank and sparse quantization error correction.  
+  低bit量子化で生じる誤差を低ランク成分とsparseな外れ値成分で補正し、圧縮率と生成品質を両立する。
 
 ### 2026-10-12
 
-- **[RocketKV](2025-2502.14051-rocketkv.md)** — cited: 38 (Scholar Feed); ICML 2025. Two-stage KV compression and sparse decoding.
+- **[RocketKV](2025-2502.14051-rocketkv.md)** — cited: 38 (Scholar Feed); ICML 2025. Two-stage KV compression and sparse decoding.  
+  Prefill後のKV圧縮とdecode中のsparse attentionを組み合わせる二段階方式。保持するKVと実際に参照するKVを段階的に絞る。
 
 ### 2026-10-05
 
