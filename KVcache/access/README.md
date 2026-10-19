@@ -23,15 +23,30 @@ decode時にKV cache全体を毎step読み込むのではなく、query-aware se
 
 ## 更新履歴
 
+### 2026-10-18
+
+- **[SeerAttention-R](2025-2506.08889-seerattention-r.md)** — cited: 21 (Scholar Feed); arXiv 2025  
+  学習したAttnGateでdecode時に重要なKV blockを選択し、block-sparse Flash Decodingで必要なKVのみを読み出す。
+
+### 2026-10-16
+
+- **[TokenSelect](2024-2411.02886-tokenselect.md)** — cited: 43 (Scholar Feed); EMNLP 2025 Main  
+  headごとのattention scoreをHead Soft Voteで統合してdecode時の重要tokenを選ぶ。Paged Dot Product Kernelでselection overheadを抑える。
+
+
 ### 2026-10-14（未登録分の反映）
 
-- **★ [ShadowKV](2024-2410.21465-shadowkv.md)** — cited: 128 (Scholar Feed, previous survey); ICML 2025. Hierarchical sparse KV retrieval.
-- **★ [MagicPIG](2024-2410.16179-magicpig.md)** — cited: 117 (Scholar Feed, previous survey); ICLR 2025. LSH-based sampling for decode attention.
+- **★ [ShadowKV](2024-2410.21465-shadowkv.md)** — cited: 128 (Scholar Feed, previous survey); ICML 2025. Hierarchical sparse KV retrieval.  
+  低ランク表現と階層的なKV管理を組み合わせ、decode時には重要なKVのみを高速メモリへ読み込む。
+- **★ [MagicPIG](2024-2410.16179-magicpig.md)** — cited: 117 (Scholar Feed, previous survey); ICLR 2025. LSH-based sampling for decode attention.  
+  Locality-Sensitive Hashingによるsamplingでattentionを近似し、長いcontextの全KVを毎step読む負担を削減する。
 
 ### 2026-10-12
 
-- **★ [InfiniGen](2024-2406.19707-infinigen.md)** — cited: 320 (Scholar Feed); OSDI 2024. Layer-ahead sparse KV prefetching from CPU.
-- **★ [Loki](2024-2406.02542-loki.md)** — cited: 75 (Scholar Feed); NeurIPS 2024. PCA-based approximate score for sparse KV access.
+- **★ [InfiniGen](2024-2406.19707-infinigen.md)** — cited: 320 (Scholar Feed); OSDI 2024. Layer-ahead sparse KV prefetching from CPU.  
+  次layerのQueryを先読みしてCPU側KVから必要なtokenを予測・prefetchし、GPUへの転送量を削減する。
+- **★ [Loki](2024-2406.02542-loki.md)** — cited: 75 (Scholar Feed); NeurIPS 2024. PCA-based approximate score for sparse KV access.  
+  低次元PCA空間でattention scoreを近似して候補tokenを選別し、選ばれたKVだけで正確なattentionを計算する。
 
 ### 2026-09-29
 
