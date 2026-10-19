@@ -4,6 +4,11 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-10-19
+
+- **[RAG-CT: Mitigating Privacy Risks on Retrieval-Augmented Generation Systems via Scanning Prompt Distribution](2026-2609.16095-rag-ct.md)** — cited: **3**（citation source: **alphaXiv author profile, Xingyu Lyu; 2026-10-19確認**。他の文献indexでは0件のため値に相違あり）  
+  Private RAG corpusへのPII-targeted extractionを、top-k retrieval similarityのentropyとtop-1/top-2 marginから検出して遮断するtraining-free defense。TBTG、PIDE、RAG-Thief、Pirateで評価。arXiv preprint。
+
 ### 2026-10-18
 
 - **[Adaptive Backtracking for Privacy Protection in Large Language Models (ABack)](2025-2508.06087-adaptive-backtracking-aback.md)** — cited: **未確認**（citation source: **未確認**）  
