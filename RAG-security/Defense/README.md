@@ -4,6 +4,11 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-10-22
+
+- **[Ensemble Privacy Defense for Knowledge-Intensive LLMs against Membership Inference Attacks (EPD)](2025-2512.03100-ensemble-privacy-defense-epd.md)** — cited: **未確認**（citation source: **未確認**）  
+  RAGのprivate retrieval corpusへのmembership inferenceを抑えるため、target/base modelの回答とtoken-level lossをjudge LLMが比較してprivacy-awareな回答を合成するinference-time defense。7種類のMIAでAUC・ASR・TPR@1%FPRを評価。Findings of EACL 2026。
+
 ### 2026-10-19
 
 - **[RAG-CT: Mitigating Privacy Risks on Retrieval-Augmented Generation Systems via Scanning Prompt Distribution](2026-2609.16095-rag-ct.md)** — cited: **3**（citation source: **alphaXiv author profile, Xingyu Lyu; 2026-10-19確認**。他の文献indexでは0件のため値に相違あり）  
