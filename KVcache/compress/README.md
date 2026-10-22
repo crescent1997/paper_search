@@ -4,6 +4,17 @@
 
 ## 更新履歴
 
+### 2026-10-22
+
+- **★ [FastGen](2023-2310.01801-fastgen.md)** — cited: 528 / Scholar Feed; ICLR 2024  
+  Attention headごとのpatternに応じてspecial token・local window・heavy hitter・full cacheなどの保存policyを切り替える。headごとに重要なKVの種類が異なる点を利用する。
+
+- **★ [HeadKV](2024-2410.19258-headkv.md)** — cited: 99 / Scholar Feed; ICLR 2025  
+  retrieval能力だけでなくcontextual reasoningへの寄与も考慮してhead別のKV budgetを配分する。低budgetでの品質維持を狙う。
+
+- **[R-KV](2025-2505.24133-rkv.md)** — cited: 25 / Scholar Feed; NeurIPS 2025 Main  
+  reasoning中に生じる反復的なKVの冗長性をKey similarityで測り、attention importanceと組み合わせてevictionする。長いChain-of-ThoughtのKV圧縮を対象とする。
+
 ### 2026-10-16
 
 - **[TurboQuant](2025-2504.19874-turboquant.md)** — cited: 未確認 (ICLR 2026 Main venue fallback)  
