@@ -4,6 +4,17 @@
 
 ## 更新履歴
 
+### 2026-10-23
+
+- **★ [DMC](2024-2403.09636-dmc.md)** — cited: 129 / Scholar Feed; ICML 2024 Main  
+  KVをappendするか直前のKVにmergeするかをモデルが学習し、head・layerごとに動的な圧縮率を実現する。追加パラメータは不要だが継続事前学習を要する。
+
+- **[LAVa](2025-2509.09754-lava.md)** — cited: 12 / Scholar Feed; Findings of EMNLP 2025  
+  attention outputの情報損失を基準にtoken選択・head budget・layer budgetを統一的に最適化する。attention scoreとValue normを組み合わせて重要度を評価する。
+
+- **★ [L2 Norm-Based KV Compression](2024-2406.11430-l2norm-kv.md)** — cited: 86 / Scholar Feed; EMNLP 2024 Main  
+  KeyのL2 normが小さいtokenほどattentionが高くなるという経験的相関を利用し、normの大きいKVを削除する。attention mapを必要とせずFlashAttentionと併用しやすい。
+
 ### 2026-10-22
 
 - **★ [FastGen](2023-2310.01801-fastgen.md)** — cited: 528 / Scholar Feed; ICLR 2024  
