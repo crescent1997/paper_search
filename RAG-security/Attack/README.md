@@ -4,6 +4,14 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-10-23
+
+- **[Query-Efficient Agentic Graph Extraction Attacks on GraphRAG Systems (AGEA)](2026-2601.14662-agea-graphrag-extraction.md)** — cited: **未確認**（citation source: **未確認**）  
+  Black-box queryからGraphRAGのprivate entity–relation graphを復元するagentic attack。二層graph memoryとnovelty-guided exploration/exploitationでnode/edge leakageとprecisionを改善。ACL 2026 Main（venue fallback）。
+
+- **[Five Queries Are Enough: Query-Efficient and Surrogate-Free Membership Inference Attacks on RAG via Entailment (MEntA)](2026-2605.24312-menta-five-queries-entailment.md)** — cited: **1**（citation source: **Scholar Feed、収録範囲内の値**）  
+  Private RAG corpus内の候補文書の存在を、5回の自然言語queryと回答のatomic-claim entailmentで推定するsurrogate-free MIA。USENIX Security 2026採択、最大AUC 0.991。
+
 ### 2026-10-10
 
 - **[Graphs Don't Stay Secret (GRASP)](2026-2602.06495-graphs-dont-stay-secret-grasp.md)** — cited: **1**（Scholar Feed）  
