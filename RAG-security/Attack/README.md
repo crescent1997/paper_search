@@ -4,6 +4,11 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-10-24
+
+- **[Mask-based Membership Inference Attacks for Retrieval-Augmented Generation (MBA)](2024-2410.20142-mask-based-membership-inference-mba.md)** — cited: **30**（citation source: **mlsanity Research Map、2026-10-19〜20確認、収録範囲内の値**）  
+  Private RAG database内の候補文書について、proxy LMで予測困難な語をmaskした質問への穴埋め精度からmembershipを推定するblack-box attack。ACM Web Conference 2025。
+
 ### 2026-10-23
 
 - **[Query-Efficient Agentic Graph Extraction Attacks on GraphRAG Systems (AGEA)](2026-2601.14662-agea-graphrag-extraction.md)** — cited: **未確認**（citation source: **未確認**）  
