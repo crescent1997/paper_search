@@ -4,6 +4,12 @@
 
 ## 更新履歴
 
+### 2026-10-24
+
+- **[KVFlow](2025-2507.07400-kvflow.md)** — NeurIPS 2025 Main; cited: ★56（mlsanity収録範囲内）  
+  Multi-agent workflowの実行順序を利用してradix tree上のKV evictionを最適化し、次のagentが使うKVをCPUからGPUへprefetchする。
+
+
 ### 2026-10-19
 
 - **★ [PagedAttention](2023-2309.06180-pagedattention.md)** — cited: 8,027 (Scholar Feed); SOSP 2023  
