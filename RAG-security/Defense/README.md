@@ -4,6 +4,11 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-10-24
+
+- **[RAG with Differential Privacy](2024-2412.19291-rag-with-differential-privacy.md)** — cited: **19**（citation source: **mlsanity Research Map、2026-10-19〜20確認、収録範囲内の値**）  
+  Private corpusのdocument-level privacyを守るため、DPなretrieval threshold選択と文書別next-token distributionのclipping・集約を組み合わせるRAG defense。arXiv preprint。
+
 ### 2026-10-22
 
 - **[Ensemble Privacy Defense for Knowledge-Intensive LLMs against Membership Inference Attacks (EPD)](2025-2512.03100-ensemble-privacy-defense-epd.md)** — cited: **未確認**（citation source: **未確認**）  
