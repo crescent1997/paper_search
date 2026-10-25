@@ -1,20 +1,33 @@
-# VLA inference: KV cache reuse and visual-token efficiency
+# KV Cache — vla
 
-Vision-Language-Action (VLA)モデルにおけるKV cache・visual tokenの効率化研究を整理する。LLMと異なり、**連続観測フレーム間の時間的冗長性**と**action生成に必要な局所視覚情報**が中心的な論点になる。
+Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual token削減・action生成の推論効率化に関する論文の要約と更新履歴。LLM向けの`reuse` / `compress` と重なる手法も、**連続観測フレーム間の時間的冗長性**や**ロボットのaction success / 制御周期**を主に評価する場合は本カテゴリで扱う。
 
-| 論文 | 主分類 | 内容 |
-|---|---|---|
-| [VLA-Cache (NeurIPS 2025)](2025-2502.02175-vla-cache.md) | cross-frame KV reuse | 静止patchのKVを再利用し、task-relevant tokenを選択的に再計算。layer別attention entropyで再利用率を調整。 |
-| [VLA-Pruner (arXiv 2025)](2025-2511.16449-vla-pruner.md) | action-aware visual-token pruning | prefillのsemantic attentionと過去action attentionを併用して重要tokenを保持。KV自体の時間的再利用ではない。 |
+## 更新履歴
 
-| [EfficientVLA (arXiv 2025)](2025-2506.10100-efficientvla.md) | diffusion-step feature reuse / visual-token pruning | LLM layer・visual tokenを削減し、action headのdenoising step間でattention/MLP中間特徴を再利用。フレーム間のKV reuseとは異なる時間軸を最適化。 |
-| [LAC (arXiv 2026)](2026-2602.00686-lac.md) | learned cross-frame visual KV reuse | Optical flow・attention alignment・task lossを利用して再計算tokenとcache再利用率を学習。VLA-Cacheと異なりselector等の追加学習が必要。 |
-| [Reflex (ICML 2026)](2026-2607.14695-reflex.md) | flow-matching KV reuse / runtime | Static prefix・sliding history・dynamic action suffixを分離し、timestep依存のKVを誤って再利用しないようにする。非同期action実行も最適化。 |
+### 2026-10-25
 
-## 今後の分類軸
-- `cross-frame reuse`: visual KVの時系列再利用、位置合わせ、cache更新。
-- `action-aware pruning`: 行動生成に必要なtokenを残すためのattentionベースの圧縮。
-- `architecture/model`: VLAのaction head、diffusion/flow matching、temporal encoderに応じたcache構造。
-- `runtime/system`: end-to-end制御周期、cacheの転送・保持、batching・非同期実行。
+- **★ [EfficientVLA](2025-2506.10100-efficientvla.md)** — cited: 94（mlsanity in-map、Google Scholar総引用数ではない）; arXiv 2025 preprint（採択venue未確認）  
+  LLM layerとvisual tokenを削減し、diffusion action headのdenoising step間でattention/MLP中間特徴を再利用する。連続フレーム間のKV再利用とは異なる時間軸で推論を高速化する。
 
-同じ論文を`reuse`や`compress`に重複登録せず、VLA固有の評価（LIBERO、SIMPLER、実機成功率、control frequency）を優先する。
+- **[LAC](2026-2602.00686-lac.md)** — cited: 2（mlsanity in-map）; arXiv 2026 preprint（採択venue未確認）  
+  Optical flow・attention alignment・task lossを利用してvisual KVの再計算tokenと再利用率を学習する。VLA-Cacheのtraining-free selectionと異なり軽量moduleの追加学習が必要。
+
+- **[Reflex](2026-2607.14695-reflex.md)** — cited: 3（mlsanity in-map）; ICML 2026 Main  
+  Flow matchingのtimestep依存性に合わせてstatic prefix・sliding visual history・dynamic action suffixを分離し、正しいKV再利用とincremental prefillを実現する。非同期制御によるaction実行の重畳も扱う。
+
+### 2026-10-23
+
+- **[VLA-Cache](2025-2502.02175-vla-cache.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; NeurIPS 2025  
+  連続観測フレームで変化の少ないvisual tokenのKVを再利用し、task-relevant tokenだけを再計算する。layer別attention entropyで再利用率を調整するtraining-free手法。
+
+- **[VLA-Pruner](2025-2511.16449-vla-pruner.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv 2025 preprint（採択venue未確認）  
+  Prefill時のsemantic attentionと過去のaction attentionを組み合わせ、ロボット操作に必要なvisual tokenを保持する。KVの時間的再利用ではなくaction-aware pruningを行う。
+
+## Scope notes
+
+- **Cross-frame KV reuse** — 連続観測フレームの変化しないvisual tokenを再利用し、変化したtokenやtask-relevant tokenを更新する。
+- **Action-aware visual token pruning** — 言語理解だけでなく操作成功率への寄与を考慮してvisual tokenを削減する。
+- **Diffusion / flow-matching feature reuse** — denoising timestep間のattention・MLP中間特徴や、timestepに依存しないKVを安全に再利用する。
+- **Streaming / runtime optimization** — incremental prefill、cacheの配置・転送、action chunkの非同期実行などでlatencyと制御周期を改善する。
+
+同一論文は`compress` / `reuse` / `model` / `access`へ重複登録せず、必要に応じてカテゴリ間で相対リンクする。評価ではLIBERO・SIMPLER・実機でのtask success、CUDA/end-to-end latency、GPU memory、control frequency、追加学習要否を重視する。
