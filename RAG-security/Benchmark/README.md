@@ -4,6 +4,11 @@ RAG security / privacy benchmark・survey論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-10-26
+
+- **[MedPriv-Bench: Benchmarking the Privacy-Utility Trade-off of Large Language Models in Medical Open-Ended Question Answering](2026-2603.14265-medpriv-bench.md)** — cited: **未確認**（citation source: **未確認**）  
+  医療RAGでde-identified clinical notesから診断・属性の組合せが漏れるcontextual leakageを、回答utilityとともに評価するbenchmark。合成PHIとNLI judgeを用いて防御手法間のprivacy–utility trade-offを比較。EMNLP 2026 Main。
+
 ### 2026-10-20
 
 - **[LeakDojo: Decoding the Leakage Threats of RAG Systems](2026-2605.05818-leakdojo.md)** — cited: **1**（citation source: **Scholar Feed、収録範囲内の値**。Google Scholar全体の引用数ではない）  
