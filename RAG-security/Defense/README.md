@@ -4,6 +4,11 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-10-26
+
+- **[Only Pay What You Must Spend: On-Demand Privacy Budget Payment for Differentially Private RAG (SparsePay-RAG)](2026-2609.27406-sparsepay-rag.md)** — cited: **未確認**（citation source: **未確認**）  
+  Public topic-guided clustering、必要時のみのprivate retrieval/generation trigger、DP contrastive decodingを組み合わせ、document-level DPのprivacy budget消費を抑えながらRAGの回答品質を維持するDefense。EMNLP 2026 Main。
+
 ### 2026-10-24
 
 - **[RAG with Differential Privacy](2024-2412.19291-rag-with-differential-privacy.md)** — cited: **19**（citation source: **mlsanity Research Map、2026-10-19〜20確認、収録範囲内の値**）  
