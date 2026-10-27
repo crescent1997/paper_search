@@ -4,6 +4,11 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-10-27
+
+- **[MemBodied](2026-2609.28256-membodied.md)** — cited: 1（mlsanity in-map）; arXiv 2026 preprint  
+  Gated Delta Ruleによる固定容量の連想記憶行列で過去のactionと観測結果を保持し、長時間タスクでの記憶容量と推論latencyを抑える。KV cacheそのものの再利用ではない。
+
 ### 2026-10-25
 
 - **★ [EfficientVLA](2025-2506.10100-efficientvla.md)** — cited: 94（mlsanity in-map、Google Scholar総引用数ではない）; arXiv 2025 preprint（採択venue未確認）  
