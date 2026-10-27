@@ -6,6 +6,12 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ### 2026-10-27
 
+- **★ [MemoryVLA](2025-2508.19236-memoryvla.md)** — cited: 199（mlsanity in-map、ユーザー指定）; ICLR 2026  
+  Working MemoryとPerceptual-Cognitive Memory Bankを用いて過去の視覚・意味情報を検索・統合し、長期操作を支援する。KV cacheの直接再利用ではない。
+
+- **★ [MEM](2026-2603.03596-mem.md)** — cited: 58（Scholar Feed収録範囲内）; arXiv 2026 preprint  
+  短期動画記憶と長期言語記憶を組み合わせ、時間方向attentionで過去フレームを集約する。下流VLMへの履歴token入力を抑える。
+
 - **[MemBodied](2026-2609.28256-membodied.md)** — cited: 1（mlsanity in-map）; arXiv 2026 preprint  
   Gated Delta Ruleによる固定容量の連想記憶行列で過去のactionと観測結果を保持し、長時間タスクでの記憶容量と推論latencyを抑える。KV cacheそのものの再利用ではない。
 
