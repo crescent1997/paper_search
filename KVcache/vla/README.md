@@ -4,6 +4,17 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-10-28
+
+- **[TempoFit](2026-2603.07647-tempofit.md)** — cited: 5（mlsanity in-map）; arXiv 2026 preprint  
+  過去フレームの中間層KVを長期記憶として保持し、類似度検索と時間バイアスを用いて現在の推論へ統合する。追加学習なしで長期タスク成功率を改善する。
+
+- **[NativeMEM](2026-2607.06678-nativemem.md)** — cited: 9（mlsanity in-map）; CoRL 2026  
+  Action-supervised memory tokenizerで各frame-viewを1 tokenに圧縮し、長期履歴を効率的に利用する。KV cacheの直接再利用ではなく、追加学習が必要。
+
+- **[OxyGen](2026-2603.14371-oxygen.md)** — cited: 4（Scholar Feed収録範囲内）; NeurIPS 2026  
+  同一観測からのactionと言語生成でVLM prefill/KVを共有し、continuous batchingで並列実行を効率化する。フレーム間KV再利用とは異なる。
+
 ### 2026-10-27
 
 - **★ [MemoryVLA](2025-2508.19236-memoryvla.md)** — cited: 199（mlsanity in-map、ユーザー指定）; ICLR 2026  
