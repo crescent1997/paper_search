@@ -4,6 +4,17 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-10-29
+
+- **[Gated VLA-Cache](2026-2608.10824-gated-vla-cache.md)** — cited: 1（mlsanity in-map）; IROS 2026  
+  Action tokenの予測確信度を使ってKV再利用と全KV再計算を切り替えるtraining-free手法。長時間制御の信頼性を改善する。
+
+- **[The Gate, Not the Cache](2026-2608.00391-the-gate-not-the-cache.md)** — cited: 2（mlsanity in-map）; arXiv preprint  
+  Skip済みforward由来のgateが起こす自己強化的な失敗を分析し、action実行中のdense refreshを提案する。
+
+- **[ActionCache](2026-2607.06370-actioncache.md)** — cited: 2（mlsanity in-map）; arXiv preprint  
+  Flow-matching VLAで過去の中間actionを再利用してdenoisingを高速化する。KV cacheの直接再利用とは異なる。
+
 ### 2026-10-28
 
 - **[TempoFit](2026-2603.07647-tempofit.md)** — cited: 5（mlsanity in-map）; arXiv 2026 preprint  
