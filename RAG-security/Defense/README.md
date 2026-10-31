@@ -4,6 +4,14 @@ RAG security / privacy defense論文の要約と更新履歴。
 
 ## 更新履歴
 
+### 2026-10-31
+
+- **[Pointing the Way, Hiding the Destination: Practical Private Dense Retrieval at Scale](2026-2608.25735-pointing-the-way-private-dense-retrieval.md)** — cited: **1**（citation source: **mlsanity Research Map、2026-10-21時点の収録範囲内の値**）  
+  Provider-held private corpusの検索において、metric-DP hashによる候補絞り込み、BFV暗号化類似度計算、Oblivious Transferを組み合わせ、queryと未選択文書の秘匿を図るDefense。arXiv preprint。
+
+- **[Addressing Corpus Knowledge Poisoning Attacks on RAG Using Sparse Attention (SDAG)](2026-2602.04711-sdag-sparse-document-attention.md)** — cited: **4**（citation source: **mlsanity Research Map、2026-10-21時点の収録範囲内の値**）  
+  Retrieved documents間のcross-attentionを遮断するblock-sparse attention maskで、poisoned documentの影響伝播を抑えるtraining-free Defense。EMNLP 2026 Main。
+
 ### 2026-10-26
 
 - **[Only Pay What You Must Spend: On-Demand Privacy Budget Payment for Differentially Private RAG (SparsePay-RAG)](2026-2609.27406-sparsepay-rag.md)** — cited: **未確認**（citation source: **未確認**）  
