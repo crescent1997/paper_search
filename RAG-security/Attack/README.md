@@ -4,6 +4,14 @@ RAGに対するattack論文の要約と更新履歴。private retrieval database
 
 ## 更新履歴
 
+### 2026-11-02
+
+- **[Document-Authored Control-Signal Impersonation: A Low-Cost Indirect Prompt Attack on RAG Safety Boundaries (DACSI)](2026-2606.09005-dacsi-control-signal-impersonation.md)** — cited: **1**（citation source: **mlsanity Research Map、2026-10-18までの収録文献内の値**）  
+  Retrieved documents内の権限・検証済みmetadataを偽装してLLMに安全境界を誤認させ、synthetic credential-like canaryの漏洩を誘発するindirect attack。retrieval方式とprompt constructionが漏洩率に与える影響も評価。
+
+- **[A Wolf in Sheep’s Clothing: Targeted Routing Hijacking in Federated RAG](2026-2605.28112-wolf-routing-hijacking-fedrag.md)** — cited: **1**（citation source: **mlsanity Research Map、2026-10-22までの収録文献内の値**）  
+  Federated RAGでclient登録用semantic profileを偽装してquery routingを乗っ取り、malicious evidenceで回答を操作するattack。Embedding/LLM-based routingを検証し、trust-aware defense TASRも提案。EMNLP 2026 Main。
+
 ### 2026-10-24
 
 - **[Mask-based Membership Inference Attacks for Retrieval-Augmented Generation (MBA)](2024-2410.20142-mask-based-membership-inference-mba.md)** — cited: **30**（citation source: **mlsanity Research Map、2026-10-19〜20確認、収録範囲内の値**）  
