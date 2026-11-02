@@ -4,6 +4,49 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-02
+
+- **[★ LaWAM](2026-2606.15768-lawam.md)** — cited: 51（Semantic Scholar由来の表示値）; CoRL 2026（著者記載、公式未照合）  
+  未来画像生成をlatent予測へ置換してaction推論を高速化。KV cacheの直接再利用ではない。
+
+- **[HELM](2026-2604.18791-helm.md)** — cited: 7（mlsanity in-map）; arXiv preprint  
+  Episodic memory検索と失敗予測・rollbackを組み合わせ、長時間タスク成功率を改善。KV再利用とは異なる。
+
+- **[ST-Merge](2026-2606.29350-st-merge.md)** — cited: 1（mlsanity in-map）; arXiv preprint  
+  Vision encoder内部の空間的visual token mergingで推論を効率化。VLA評価ではcross-frame KV reuseを実施していない。
+
+### 2026-11-01
+
+- **[EventVLA](2026-2606.20092-eventvla.md)** — cited: 26（mlsanity in-map）; CoRL 2026（著者記載、公式未照合）  
+  将来必要な重要イベント画像を選んで保持する長期記憶。成功率を改善するが推論latencyは増加。
+
+- **[μVLA](2026-2606.12497-muvla.md)** — cited: 11（mlsanity in-map）; arXiv preprint  
+  Recurrent working memory tokenを学習して長期依存を保持。制御周波数とのtradeoffがある。
+
+- **[AC²-VLA](2026-2601.19634-ac2-vla.md)** — cited: 6（mlsanity in-map）; arXiv preprint  
+  Cognition feature再利用、visual token pruning、layer skippingを統合。layer KVそのものの再利用ではない。
+
+### 2026-10-31
+
+- **[TTF-VLA](2025-2508.19257-ttf-vla.md)** — cited: 12（mlsanity in-map）; AAAI 2026  
+  前フレームのattentionと画像差分でvisual embeddingを選択的に再利用。KV cache全層の再利用とは異なる。
+
+- **[VPWEM](2026-2603.04910-vpwem.md)** — cited: 6（mlsanity in-map）; IEEE RA-L 2026  
+  Working memoryと固定容量episodic memoryを併用し、長期履歴の容量とlatencyを制御。
+
+- **[EchoVLA](2025-2511.18112-echovla.md)** — cited: 15（mlsanity in-map）; ECCV 2026（共著者記載、公式未照合）  
+  3D scene memoryとepisodic memoryを統合して長時間操作を支援。KV cache直接再利用ではない。
+
+### 2026-10-30
+
+- **[ChainVLA](2026-2608.02326-chainvla.md)** — cited: 未確認; 未確認  
+  長期操作・記憶に関する論文。詳細は個別Markdownを参照。
+
+- **[MemoryVLA++](2026-2606.09827-memoryvla-pp.md)** — cited: 未確認; 未確認  
+  長期記憶設計に関する論文。詳細は個別Markdownを参照。
+
+**未登録:** DepthCache（arXiv:2603.10469）はMarkdown作成済みだがGitHubへの登録がブロックされているため、一覧には未掲載。
+
 ### 2026-10-29
 
 - **[Gated VLA-Cache](2026-2608.10824-gated-vla-cache.md)** — cited: 1（mlsanity in-map）; IROS 2026  
@@ -61,6 +104,7 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 - **Cross-frame KV reuse** — 連続観測フレームの変化しないvisual tokenを再利用し、変化したtokenやtask-relevant tokenを更新する。
 - **Action-aware visual token pruning** — 言語理解だけでなく操作成功率への寄与を考慮してvisual tokenを削減する。
 - **Diffusion / flow-matching feature reuse** — denoising timestep間のattention・MLP中間特徴や、timestepに依存しないKVを安全に再利用する。
+- **Long-horizon memory** — working / episodic / semantic memoryの検索・更新・圧縮・忘却、部分観測下での長期タスク成功率とlatencyのtradeoffを扱う。KV cache直接再利用と区別する。
 - **Streaming / runtime optimization** — incremental prefill、cacheの配置・転送、action chunkの非同期実行などでlatencyと制御周期を改善する。
 
 同一論文は`compress` / `reuse` / `model` / `access`へ重複登録せず、必要に応じてカテゴリ間で相対リンクする。評価ではLIBERO・SIMPLER・実機でのtask success、CUDA/end-to-end latency、GPU memory、control frequency、追加学習要否を重視する。
