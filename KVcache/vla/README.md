@@ -4,6 +4,22 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-07
+
+- **[IMPRINT](2026-2610.14406-imprint.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
+  視覚・action・proprioceptionを固定長のrecurrent latent memoryに圧縮。履歴再構成と進捗推定で事前学習後、VLAと共同微調整する。Transformer KVの直接再利用ではない。
+
+### 2026-11-06
+
+- **[SimpleMemVLA](2026-2609.05533-simplememvla.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
+  過去動画をnative-video contextとして入力し、action実行中に共有prefixをprefillして待ち時間を削減。KV prefix再利用を行うが専用の固定長memory bankは使わない。
+
+### 2026-11-05
+
+- **[ReMem-VLA](2026-2603.12942-remem-vla.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
+  短期・長期のrecurrent queryと過去画像再構成の補助損失で視覚記憶を学習。KV cacheの直接再利用ではない。
+
+
 ### 2026-11-02
 
 - **[★ LaWAM](2026-2606.15768-lawam.md)** — cited: 51（Semantic Scholar由来の表示値）; CoRL 2026（著者記載、公式未照合）  
