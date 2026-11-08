@@ -4,6 +4,15 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-08
+
+- **[CondenseVLA](2026-2610.25927-condensevla.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; 採択venueは著者記載、公式未照合  
+  過去フレームのキャッシュ済みVLM特徴をlearnable slotに圧縮し、diffusion action decoderへの履歴入力を削減する。Transformer KV cacheの直接再利用ではない。
+
+- **[S²-VLA](2026-2606.27872-s2-vla.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; 採択venueは著者記載、公式未照合  
+  GRUのbelief stateを使い、視覚・言語・行動特徴の融合を状態依存で制御する。長期タスクの状態追跡が中心で、KV cache直接再利用ではない。
+
+
 ### 2026-11-07
 
 - **[IMPRINT](2026-2610.14406-imprint.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
