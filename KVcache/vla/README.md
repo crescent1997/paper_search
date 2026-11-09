@@ -4,6 +4,18 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-09
+
+- **[Chronos](2026-2606.30318-chronos.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
+  Selective SSMによる固定長recurrent stateで長時間の観測履歴を統合。KV cacheの直接再利用ではない。
+
+- **[RAVEN](2026-2606.25206-raven.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
+  視覚埋め込みと位置・時刻を外部DBに保存し、長期ロボットQAとナビゲーションに利用。Transformer KV cacheではなく外部検索記憶。
+
+- **[AURA](2026-2606.02775-aura.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
+  Action-error gateで固定容量fast-weight memoryの書き込みを制御。abstractのLIBERO評価と本文のsynthetic-only記述に不整合があり、実験結果の解釈には注意。
+
+
 ### 2026-11-08
 
 - **[CondenseVLA](2026-2610.25927-condensevla.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; 採択venueは著者記載、公式未照合  
