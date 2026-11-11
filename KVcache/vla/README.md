@@ -4,6 +4,20 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-11
+
+- **[MEMI](2026-memi-reverse-engineering-memory.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; CoRL 2026 Late Breaking Results（プロジェクト記載、正式arXiv ID未確認）  
+  行動予測誤差を通じて記憶すべき情報の教師信号を改善する。KV cacheの直接再利用ではない。
+
+### 2026-11-10
+
+- **★ [ReMEmbR](2024-2409.13682-remembr.md)** — cited: 77（mlsanity収録論文内、2026-11-04時点）; ICRA 2025  
+  Captionと時空間メタデータを外部DBに保存し、LLMが反復検索する。RAVENとの比較対象で、Transformer KV cacheではない。
+
+- **[HiMe](2026-2607.03449-hime.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
+  Planner・Sentry・Executorを階層化し、episodic memoryのAdd/Update/DeleteとPlanner呼出頻度を制御する。KV cache直接再利用ではない。
+
+
 ### 2026-11-09
 
 - **[Chronos](2026-2606.30318-chronos.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; arXiv preprint  
