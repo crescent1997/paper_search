@@ -4,6 +4,15 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-12
+
+- **[SAFE-Pruner](2026-2605.29662-safe-pruner.md)** — cited: 4（mlsanity収録範囲、2026-10-20時点）; ECCV 2026; 自動選定・Historical  
+  過去フレームの深層attention saliencyを利用して現在フレームの視覚tokenを選択する。Transformer KV tensor自体の再利用ではない。
+
+- **[VLA-IAP](2026-2603.22991-vla-iap.md)** — cited: 1（mlsanity収録範囲、2026-10-19時点）; arXiv preprint; 自動選定・Historical  
+  Semantic attentionとmotionの一致度、Sobel edgeを用いて物理操作に必要な視覚tokenを残す。KV tensor直接再利用ではない。
+
+
 ### 2026-11-11
 
 - **[MEMI](2026-memi-reverse-engineering-memory.md)** — cited: 未確認（ユーザー指定・引用数条件免除）; CoRL 2026 Late Breaking Results（プロジェクト記載、正式arXiv ID未確認）  
