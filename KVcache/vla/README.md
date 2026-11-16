@@ -4,6 +4,14 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-16
+
+- **[DySta](2026-2602.03983-dysta.md)** — cited: 6（mlsanity in-map、2026-10-26参照。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
+  視覚表現を複数寿命のstatic tokenとdynamic tokenに分離し、static tokenのKVをフレーム間で再利用する。learned recache gateを備え、SimplerEnv 2.26倍、LIBERO 1.70倍、実機2.21倍の高速化を報告。追加学習が必要。
+
+- **[TemporalFlow-VLA](2026-2608.26821-temporalflow-vla.md)** — cited: 1（mlsanity in-map、2026-10-26までの収録範囲。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・New  
+  ロボット表面の時間的flowを学習時の教師信号とし、直近action履歴をtemporal queryに要約。過去フレームの視覚encoder特徴を非同期キャッシュし、server-side latencyを7.8%削減。Transformer layer KVの直接再利用ではなく、追加学習が必要。
+
 ### 2026-11-12
 
 - **[SAFE-Pruner](2026-2605.29662-safe-pruner.md)** — cited: 4（mlsanity収録範囲、2026-10-20時点）; ECCV 2026; 自動選定・Historical  
