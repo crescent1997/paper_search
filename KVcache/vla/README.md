@@ -4,6 +4,14 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-17
+
+- **[A1](2026-2604.05672-a1.md)** — cited: 8（mlsanity収録範囲。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
+  VLMのadaptive early exitとflow-matching action headのtruncated inference・層間warm-startを組み合わせる。LIBEROでは通常推論37.8秒/episodeに対してwarm-start併用10.5秒/episodeを報告。Cross-frame KV reuseではなく、追加学習が必要。
+
+- **[BFA++](2026-2602.20566-bfa-plus-plus.md)** — cited: 3（mlsanity収録範囲。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
+  複数カメラのintra-view / inter-view重要度を使ってvisual tokenを階層的にpruningする。RoboTwinでπ0の平均成功率49.6%→58.3%、制御周波数6.5→10.3 Hzを報告。Transformer KVのフレーム間再利用ではなく、追加学習が必要。
+
 ### 2026-11-16
 
 - **[DySta](2026-2602.03983-dysta.md)** — cited: 6（mlsanity in-map、2026-10-26参照。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
