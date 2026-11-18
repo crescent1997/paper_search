@@ -4,6 +4,14 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-18
+
+- **[TurboVLA](2026-2607.27205-turbovla.md)** — cited: 11（mlsanity収録範囲、2026-11-04まで。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
+  LLM backboneを独立vision/text encoderと軽量cross-attention、action chunk decoderに置き換え、RTX 4090上の0.2BモデルでLIBERO成功率97.6%、latency 31.2 ms、VRAM 0.9 GiBを報告。Transformer KV cacheの直接再利用ではなく、モデルの再学習が必要。
+
+- **[DEM — Decoupling Vision, Language, and Action](2026-2609.18374-dem.md)** — cited: 2（mlsanity収録範囲、2026-11-12まで。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・New  
+  DINOv3視覚encoder、NeoBERT言語encoder、one-step MeanFlow action headを分離し、命令が変わるまでinstruction embeddingをキャッシュする。RTX PRO 6000でpolicy forward 6.1 msを報告。Transformer layer KVの再利用ではなく、追加学習が必要。
+
 ### 2026-11-17
 
 - **[A1](2026-2604.05672-a1.md)** — cited: 8（mlsanity収録範囲。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
