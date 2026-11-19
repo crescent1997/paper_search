@@ -4,6 +4,14 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-19
+
+- **[MemoryWAM](2026-2606.20562-memorywam.md)** — cited: 16（mlsanity in-map、2026-11-15までの収録範囲。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
+  World Action Modelの動画側KV cacheを短期window・初期anchor・長期gist tokenに分割。長期フレームのvisual tokensを120→8に圧縮（長期部分のKV容量15分の1）し、RMBenchの9タスク平均成功率83.0%を報告。Transformer内部KVの圧縮・evictionに直接関係し、追加学習が必要。
+
+- **[ECHO](2026-2605.10993-echo.md)** — cited: 2（mlsanity in-map、2026-10-19までの収録範囲。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
+  成功経験を双曲空間の階層的メモリ木に保存し、entailment-aware retrievalと非同期consolidationを用いて長期操作を支援。LIBERO-Long成功率93.48%を報告。Transformer KVの直接再利用ではなく外部episodic memoryであり、追加学習が必要。
+
 ### 2026-11-18
 
 - **[TurboVLA](2026-2607.27205-turbovla.md)** — cited: 11（mlsanity収録範囲、2026-11-04まで。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
