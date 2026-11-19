@@ -4,6 +4,11 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-20
+
+- **[History-Conditioned Spatio-Temporal Visual Token Pruning](2026-2603.06480-history-conditioned-pruning.md)** — cited: 未確認（Google Scholar / Semantic Scholarの信頼できる件数を取得できず）; IROS 2026（著者公式ページで採択確認）; 自動選定・Historical（公式採択によるcitation条件fallback）  
+  現在フレームでは意味的重要度と多様性を両立するA-MMR、過去フレームでは現在観測との関連性に基づくquery-guided reweightingを用い、追加学習なしで視覚tokenを削減する。R2R val-unseenで90% pruning時のSR 47.63%、SPL 36.36%（無圧縮では55.74%、49.66%）、RTX 4090でCUDA latency 231.34→213.40 msを報告。Transformer KVのフレーム間再利用ではなく、LLM入力tokenの削減。
+
 ### 2026-11-19
 
 - **[MemoryWAM](2026-2606.20562-memorywam.md)** — cited: 16（mlsanity in-map、2026-11-15までの収録範囲。Google Scholar総引用数ではない）; arXiv preprint（採択venue未確認）; 自動選定・Historical  
