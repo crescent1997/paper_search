@@ -4,6 +4,19 @@ Vision-Language-Action（VLA）モデルにおけるKV cache再利用・visual t
 
 ## 更新履歴
 
+### 2026-11-25
+
+- **[TRIAGE](2026-2610.34519-triage.md)** — cited: 未確認（今回のみユーザー承認により引用数条件免除）; arXiv preprint（採択未確認）; New  
+  浅層表現のdriftと重要度に基づきvisual tokenを再計算・KV再利用・削除に振り分ける。OpenVLA-OFTのLIBERO平均成功率97.1%→95.8%、Jetson AGX Orinでprefill 433.9→224.0 ms、E2E 674.8→461.1 msを報告。追加学習不要。
+
+- **[APS-VLA](2026-2611.13030-aps-vla.md)** — cited: 未確認（今回のみユーザー承認により引用数条件免除）; arXiv preprint（採択未確認）; New  
+  Action supervisionと将来視覚特徴の予測を用いてvisual token selectorを学習し、凍結したVLAの入力を削減する。実機5タスク平均latency 137.25→93.25 ms、成功率60%→61%を報告。KV tensorの直接再利用ではなく、選択器の追加学習が必要。
+
+- **[ActMem-VLA](2026-2609.37307-actmem-vla.md)** — cited: 未確認（今回のみユーザー承認により引用数条件免除）; arXiv preprint（採択未確認）; New  
+  Mamba-2で実行action履歴を圧縮し、denoising前半をPreAction Expert、後半を凍結済みAction Expertで処理する。LIBERO-Mem平均成功率80.8%（π₀.₅は65.2%）、追加parameter 3.45%を報告。過去Transformer KVの直接再利用ではなく、追加学習が必要。
+
+※ 上記3件は代替掲載資料に基づく要約であり、原論文全文・付録の照合は未完了。一部実験値は参考値扱い。要約・編集上の誤りが含まれる可能性があるため、詳細は原論文を参照。
+
 ### 2026-11-20
 
 - **[History-Conditioned Spatio-Temporal Visual Token Pruning](2026-2603.06480-history-conditioned-pruning.md)** — cited: 未確認（Google Scholar / Semantic Scholarの信頼できる件数を取得できず）; IROS 2026（著者公式ページで採択確認）; 自動選定・Historical（公式採択によるcitation条件fallback）  
